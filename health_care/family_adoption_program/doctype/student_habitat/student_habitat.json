@@ -1,0 +1,189 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:ST-{YYYY}-{######}",
+ "creation": "2024-07-25 08:46:27.715591",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "student_details_section",
+  "student",
+  "environment_section",
+  "approach_road",
+  "kitchen_section",
+  "kitchen",
+  "drinking_water_section",
+  "water_source",
+  "bathing_area_section",
+  "privacy",
+  "sewage_disposal_section",
+  "sanitary_latrine",
+  "solid_waste_section",
+  "waste_segragation",
+  "economic_status_section",
+  "additional_income",
+  "attachments_section",
+  "attach_sketch",
+  "house_plan",
+  "column_break_opyq",
+  "any_remarks",
+  "section_break_dhai",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_dhai",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Student Habitat",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "student_details_section",
+   "fieldtype": "Section Break",
+   "label": "Student Details"
+  },
+  {
+   "fieldname": "student",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Student",
+   "options": "Student Master",
+   "reqd": 1
+  },
+  {
+   "fieldname": "environment_section",
+   "fieldtype": "Section Break",
+   "label": "Environment"
+  },
+  {
+   "fieldname": "approach_road",
+   "fieldtype": "Select",
+   "label": "Approach Road",
+   "options": "Mud\nCement\nTar"
+  },
+  {
+   "fieldname": "kitchen_section",
+   "fieldtype": "Section Break",
+   "label": "Kitchen"
+  },
+  {
+   "fieldname": "kitchen",
+   "fieldtype": "Select",
+   "label": "Kitchen",
+   "options": "Separate\nPart of Living Room"
+  },
+  {
+   "fieldname": "drinking_water_section",
+   "fieldtype": "Section Break",
+   "label": "Drinking water"
+  },
+  {
+   "fieldname": "water_source",
+   "fieldtype": "Select",
+   "label": "Source",
+   "options": "Piped\nWell\nBore Well\nRO Filter\nTank"
+  },
+  {
+   "fieldname": "bathing_area_section",
+   "fieldtype": "Section Break",
+   "label": "Bathing Area"
+  },
+  {
+   "fieldname": "privacy",
+   "fieldtype": "Select",
+   "label": "Privacy",
+   "options": "Present\nAbsent"
+  },
+  {
+   "fieldname": "sewage_disposal_section",
+   "fieldtype": "Section Break",
+   "label": "Sewage Disposal"
+  },
+  {
+   "fieldname": "sanitary_latrine",
+   "fieldtype": "Select",
+   "label": "Sanitary Latrine",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "solid_waste_section",
+   "fieldtype": "Section Break",
+   "label": "Solid Waste"
+  },
+  {
+   "fieldname": "waste_segragation",
+   "fieldtype": "Select",
+   "label": "Segregation into Dry and Wet",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "economic_status_section",
+   "fieldtype": "Section Break",
+   "label": "Economic Status"
+  },
+  {
+   "fieldname": "additional_income",
+   "fieldtype": "Currency",
+   "label": "Additional sources of income"
+  },
+  {
+   "fieldname": "attachments_section",
+   "fieldtype": "Section Break",
+   "label": "Attachments"
+  },
+  {
+   "fieldname": "attach_sketch",
+   "fieldtype": "Attach",
+   "label": "Sketch of the Area to House with Landmark/Road"
+  },
+  {
+   "fieldname": "house_plan",
+   "fieldtype": "Attach",
+   "label": "House Plan"
+  },
+  {
+   "fieldname": "column_break_opyq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "any_remarks",
+   "fieldtype": "Small Text",
+   "label": "Any Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-07-25 08:58:49.504034",
+ "modified_by": "Administrator",
+ "module": "Family Adoption Program",
+ "name": "Student Habitat",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
