@@ -1,0 +1,104 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-24 15:12:33.625166",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "family_structure_section",
+  "family_member_name",
+  "age",
+  "sex",
+  "relation_to_hof",
+  "marital_status",
+  "column_break_aryt",
+  "education",
+  "occupation",
+  "monthly_income",
+  "medico_social_conditions",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "family_structure_section",
+   "fieldtype": "Section Break",
+   "label": "Family Structure"
+  },
+  {
+   "fieldname": "family_member_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Age"
+  },
+  {
+   "fieldname": "sex",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Sex",
+   "options": "Male\nFemale"
+  },
+  {
+   "fieldname": "relation_to_hof",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Relation to HOF"
+  },
+  {
+   "fieldname": "marital_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Marital Status",
+   "options": "Single\nMarried\nDivorced\nWidow"
+  },
+  {
+   "fieldname": "column_break_aryt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "occupation",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Occupation"
+  },
+  {
+   "fieldname": "monthly_income",
+   "fieldtype": "Currency",
+   "label": "Monthly Income"
+  },
+  {
+   "fieldname": "medico_social_conditions",
+   "fieldtype": "Float",
+   "label": "Medico Social Conditions (Years)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "education",
+   "fieldtype": "Data",
+   "label": "Education"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-24 15:20:56.074037",
+ "modified_by": "Administrator",
+ "module": "Family Adoption Program",
+ "name": "Family Structure",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

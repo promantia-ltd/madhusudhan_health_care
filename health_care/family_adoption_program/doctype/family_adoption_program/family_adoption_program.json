@@ -1,0 +1,187 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{DD}-{MM}-{YYYY}-ROLLNO-{roll_no}",
+ "creation": "2024-07-24 14:45:07.728468",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "student_details_section",
+  "student_name",
+  "roll_no",
+  "habituated_since",
+  "religion",
+  "religion_name",
+  "sub_religion",
+  "column_break_oufj",
+  "folder_no",
+  "mother_tongue",
+  "migrated_from",
+  "migration_reason",
+  "contact_details_section",
+  "address_html",
+  "column_break_gxan",
+  "family_no",
+  "informant",
+  "informant_no",
+  "family_structure_details_section",
+  "family_structure_details",
+  "section_break_iexg",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_iexg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Family Adoption Program",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "student_details_section",
+   "fieldtype": "Section Break",
+   "label": "Student Details"
+  },
+  {
+   "fieldname": "student_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Student Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "roll_no",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Roll Number",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:cur_frm.is_new() != 1",
+   "fieldname": "address_html",
+   "fieldtype": "HTML",
+   "label": "Student Address"
+  },
+  {
+   "fieldname": "column_break_oufj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contact_details_section",
+   "fieldtype": "Section Break",
+   "label": "Contact Details"
+  },
+  {
+   "fieldname": "family_no",
+   "fieldtype": "Phone",
+   "label": "Family Mobile No."
+  },
+  {
+   "fieldname": "column_break_gxan",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "informant_no",
+   "fieldtype": "Phone",
+   "label": "Informant Mobile No."
+  },
+  {
+   "fieldname": "informant",
+   "fieldtype": "Data",
+   "label": "Informant"
+  },
+  {
+   "fieldname": "mother_tongue",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mother Tongue"
+  },
+  {
+   "fieldname": "migrated_from",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Migrated From"
+  },
+  {
+   "fieldname": "habituated_since",
+   "fieldtype": "Data",
+   "label": "Habituated since( which month/year):"
+  },
+  {
+   "fieldname": "folder_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Folder No.",
+   "reqd": 1
+  },
+  {
+   "fieldname": "religion",
+   "fieldtype": "Select",
+   "label": "Religion",
+   "options": "Hindu\nMuslim\nChristian\nSikh\nJain\nJew\nOther"
+  },
+  {
+   "depends_on": "eval:cur_frm.doc.religion == \"Other\"",
+   "fieldname": "religion_name",
+   "fieldtype": "Data",
+   "label": "Name of religion"
+  },
+  {
+   "fieldname": "migration_reason",
+   "fieldtype": "Small Text",
+   "label": "Reason for Migration"
+  },
+  {
+   "fieldname": "sub_religion",
+   "fieldtype": "Data",
+   "label": "Caste / Sub Religion"
+  },
+  {
+   "fieldname": "family_structure_details_section",
+   "fieldtype": "Section Break",
+   "label": "Family Structure Details"
+  },
+  {
+   "fieldname": "family_structure_details",
+   "fieldtype": "Table",
+   "label": "Family Structure",
+   "options": "Family Structure"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-07-24 15:20:32.463106",
+ "modified_by": "Administrator",
+ "module": "Family Adoption Program",
+ "name": "Family Adoption Program",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "roll_no"
+}
