@@ -1,0 +1,232 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:FAM-{YYYY}-{######}",
+ "creation": "2024-07-25 08:00:10.766423",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "student",
+  "habituated_since",
+  "migrated_from",
+  "family_no",
+  "column_break_vrat",
+  "migration_reason",
+  "additional_details_section",
+  "infants_no",
+  "children_five",
+  "children_six_nine",
+  "column_break_zkxq",
+  "adults_no",
+  "female_no",
+  "adolescents",
+  "column_break_nnmt",
+  "pregnant_women",
+  "lactating_women",
+  "elderly",
+  "vital_events_count_in_the_family_during_past_one_year_section",
+  "birth",
+  "adoption",
+  "column_break_phyo",
+  "marriage",
+  "divorce",
+  "column_break_nhao",
+  "migration",
+  "death",
+  "family_strucuture_details_section",
+  "family_structure_details",
+  "section_break_xv5m",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_xv5m",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Family Details",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "student",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Student",
+   "options": "Student Master",
+   "reqd": 1
+  },
+  {
+   "fieldname": "habituated_since",
+   "fieldtype": "Data",
+   "label": "Habituated since( which month/year):"
+  },
+  {
+   "fieldname": "migrated_from",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Migrated From"
+  },
+  {
+   "fieldname": "family_no",
+   "fieldtype": "Phone",
+   "in_list_view": 1,
+   "label": "Family Mobile No."
+  },
+  {
+   "fieldname": "column_break_vrat",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "migration_reason",
+   "fieldtype": "Small Text",
+   "label": "Reason for Migration"
+  },
+  {
+   "fieldname": "family_strucuture_details_section",
+   "fieldtype": "Section Break",
+   "label": "Family Strucuture Details"
+  },
+  {
+   "fieldname": "family_structure_details",
+   "fieldtype": "Table",
+   "label": "Family Stucture Details",
+   "options": "Family Structure"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "additional_details_section",
+   "fieldtype": "Section Break",
+   "label": "Additional Details ( Mention the count )"
+  },
+  {
+   "fieldname": "adults_no",
+   "fieldtype": "Int",
+   "label": "Adults - Males"
+  },
+  {
+   "fieldname": "female_no",
+   "fieldtype": "Int",
+   "label": "Adults - Females"
+  },
+  {
+   "fieldname": "infants_no",
+   "fieldtype": "Int",
+   "label": "Infants (0-1 Yrs)"
+  },
+  {
+   "fieldname": "children_five",
+   "fieldtype": "Int",
+   "label": "Children (<= 5Yrs)"
+  },
+  {
+   "fieldname": "children_six_nine",
+   "fieldtype": "Int",
+   "label": "Children (6-9 Yrs)"
+  },
+  {
+   "fieldname": "adolescents",
+   "fieldtype": "Int",
+   "label": "Adolescents (10\u201319yrs)"
+  },
+  {
+   "fieldname": "pregnant_women",
+   "fieldtype": "Int",
+   "label": "Pregnant Women: "
+  },
+  {
+   "fieldname": "lactating_women",
+   "fieldtype": "Int",
+   "label": "Lactating Women:"
+  },
+  {
+   "fieldname": "column_break_nnmt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "elderly",
+   "fieldtype": "Int",
+   "label": "Elderly (>65yrs):"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "vital_events_count_in_the_family_during_past_one_year_section",
+   "fieldtype": "Section Break",
+   "label": "Vital events count in the family during past one year"
+  },
+  {
+   "fieldname": "birth",
+   "fieldtype": "Int",
+   "label": "Birth"
+  },
+  {
+   "fieldname": "adoption",
+   "fieldtype": "Int",
+   "label": "Adoption"
+  },
+  {
+   "fieldname": "marriage",
+   "fieldtype": "Int",
+   "label": "Marriage"
+  },
+  {
+   "fieldname": "divorce",
+   "fieldtype": "Int",
+   "label": "Divorce"
+  },
+  {
+   "fieldname": "column_break_phyo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "migration",
+   "fieldtype": "Int",
+   "label": "Migration"
+  },
+  {
+   "fieldname": "column_break_nhao",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "death",
+   "fieldtype": "Int",
+   "label": "Death"
+  },
+  {
+   "fieldname": "column_break_zkxq",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-07-25 08:38:47.135003",
+ "modified_by": "Administrator",
+ "module": "Family Adoption Program",
+ "name": "Family Details",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

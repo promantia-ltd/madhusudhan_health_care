@@ -6,6 +6,6 @@ from frappe.model.document import Document
 from frappe.contacts.address_and_contact import load_address_and_contact
 
 
-class FamilyAdoptionProgram(Document):
+class StudentMaster(Document):
 	def onload(self):
 		load_address_and_contact(self)

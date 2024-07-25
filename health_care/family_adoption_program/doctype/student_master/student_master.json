@@ -8,24 +8,18 @@
  "field_order": [
   "student_details_section",
   "student_name",
-  "roll_no",
-  "habituated_since",
   "religion",
   "religion_name",
   "sub_religion",
   "column_break_oufj",
+  "roll_no",
   "folder_no",
   "mother_tongue",
-  "migrated_from",
-  "migration_reason",
   "contact_details_section",
   "address_html",
   "column_break_gxan",
-  "family_no",
   "informant",
   "informant_no",
-  "family_structure_details_section",
-  "family_structure_details",
   "section_break_iexg",
   "amended_from"
  ],
@@ -39,7 +33,7 @@
    "fieldtype": "Link",
    "label": "Amended From",
    "no_copy": 1,
-   "options": "Family Adoption Program",
+   "options": "Student Master",
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
@@ -79,11 +73,6 @@
    "label": "Contact Details"
   },
   {
-   "fieldname": "family_no",
-   "fieldtype": "Phone",
-   "label": "Family Mobile No."
-  },
-  {
    "fieldname": "column_break_gxan",
    "fieldtype": "Column Break"
   },
@@ -102,17 +91,6 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Mother Tongue"
-  },
-  {
-   "fieldname": "migrated_from",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Migrated From"
-  },
-  {
-   "fieldname": "habituated_since",
-   "fieldtype": "Data",
-   "label": "Habituated since( which month/year):"
   },
   {
    "fieldname": "folder_no",
@@ -134,34 +112,18 @@
    "label": "Name of religion"
   },
   {
-   "fieldname": "migration_reason",
-   "fieldtype": "Small Text",
-   "label": "Reason for Migration"
-  },
-  {
    "fieldname": "sub_religion",
    "fieldtype": "Data",
    "label": "Caste / Sub Religion"
-  },
-  {
-   "fieldname": "family_structure_details_section",
-   "fieldtype": "Section Break",
-   "label": "Family Structure Details"
-  },
-  {
-   "fieldname": "family_structure_details",
-   "fieldtype": "Table",
-   "label": "Family Structure",
-   "options": "Family Structure"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-07-24 15:20:32.463106",
+ "modified": "2024-07-25 08:30:54.306015",
  "modified_by": "Administrator",
  "module": "Family Adoption Program",
- "name": "Family Adoption Program",
+ "name": "Student Master",
  "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
