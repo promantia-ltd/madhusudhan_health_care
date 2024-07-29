@@ -8,18 +8,9 @@
  "field_order": [
   "student_details_section",
   "student_name",
-  "religion",
-  "religion_name",
-  "sub_religion",
+  "mobile_no",
   "column_break_oufj",
   "roll_no",
-  "folder_no",
-  "mother_tongue",
-  "contact_details_section",
-  "address_html",
-  "column_break_gxan",
-  "informant",
-  "informant_no",
   "section_break_iexg",
   "amended_from"
  ],
@@ -58,69 +49,20 @@
    "reqd": 1
   },
   {
-   "depends_on": "eval:cur_frm.is_new() != 1",
-   "fieldname": "address_html",
-   "fieldtype": "HTML",
-   "label": "Student Address"
-  },
-  {
    "fieldname": "column_break_oufj",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "contact_details_section",
-   "fieldtype": "Section Break",
-   "label": "Contact Details"
-  },
-  {
-   "fieldname": "column_break_gxan",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "informant_no",
+   "fieldname": "mobile_no",
    "fieldtype": "Phone",
-   "label": "Informant Mobile No."
-  },
-  {
-   "fieldname": "informant",
-   "fieldtype": "Data",
-   "label": "Informant"
-  },
-  {
-   "fieldname": "mother_tongue",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Mother Tongue"
-  },
-  {
-   "fieldname": "folder_no",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Folder No.",
+   "label": "Mobile No.",
    "reqd": 1
-  },
-  {
-   "fieldname": "religion",
-   "fieldtype": "Select",
-   "label": "Religion",
-   "options": "Hindu\nMuslim\nChristian\nSikh\nJain\nJew\nOther"
-  },
-  {
-   "depends_on": "eval:cur_frm.doc.religion == \"Other\"",
-   "fieldname": "religion_name",
-   "fieldtype": "Data",
-   "label": "Name of religion"
-  },
-  {
-   "fieldname": "sub_religion",
-   "fieldtype": "Data",
-   "label": "Caste / Sub Religion"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-07-25 08:30:54.306015",
+ "modified": "2024-07-29 10:34:14.736031",
  "modified_by": "Administrator",
  "module": "Family Adoption Program",
  "name": "Student Master",

@@ -10,33 +10,24 @@
   "habituated_since",
   "migrated_from",
   "family_no",
+  "religion",
+  "religion_name",
   "column_break_vrat",
   "migration_reason",
-  "additional_details_section",
-  "infants_no",
-  "children_five",
-  "children_six_nine",
-  "column_break_zkxq",
-  "adults_no",
-  "female_no",
-  "adolescents",
-  "column_break_nnmt",
-  "pregnant_women",
-  "lactating_women",
-  "elderly",
-  "vital_events_count_in_the_family_during_past_one_year_section",
-  "birth",
-  "adoption",
-  "column_break_phyo",
-  "marriage",
-  "divorce",
-  "column_break_nhao",
-  "migration",
-  "death",
-  "family_strucuture_details_section",
+  "sub_religion",
+  "mother_tongue",
+  "contact_details_section",
+  "address_html",
+  "column_break_zjay",
+  "informant",
+  "informant_no",
+  "family_structure_details_tab",
+  "family_structure_details_section",
   "family_structure_details",
   "section_break_xv5m",
-  "amended_from"
+  "amended_from",
+  "habitat_tab",
+  "habitat"
  ],
  "fields": [
   {
@@ -88,124 +79,82 @@
    "label": "Reason for Migration"
   },
   {
-   "fieldname": "family_strucuture_details_section",
-   "fieldtype": "Section Break",
-   "label": "Family Strucuture Details"
-  },
-  {
    "fieldname": "family_structure_details",
    "fieldtype": "Table",
    "label": "Family Stucture Details",
    "options": "Family Structure"
   },
   {
-   "collapsible": 1,
-   "fieldname": "additional_details_section",
+   "fieldname": "religion",
+   "fieldtype": "Select",
+   "label": "Religion",
+   "options": "Hindu\nMuslim\nChristian\nSikh\nJain\nJew\nOther"
+  },
+  {
+   "fieldname": "religion_name",
+   "fieldtype": "Data",
+   "label": "Name of religion"
+  },
+  {
+   "fieldname": "sub_religion",
+   "fieldtype": "Data",
+   "label": "Caste / Sub Religion"
+  },
+  {
+   "fieldname": "mother_tongue",
+   "fieldtype": "Data",
+   "label": "Mother Tongue"
+  },
+  {
+   "fieldname": "contact_details_section",
    "fieldtype": "Section Break",
-   "label": "Additional Details ( Mention the count )"
+   "label": "Contact Details"
   },
   {
-   "fieldname": "adults_no",
-   "fieldtype": "Int",
-   "label": "Adults - Males"
-  },
-  {
-   "fieldname": "female_no",
-   "fieldtype": "Int",
-   "label": "Adults - Females"
-  },
-  {
-   "fieldname": "infants_no",
-   "fieldtype": "Int",
-   "label": "Infants (0-1 Yrs)"
-  },
-  {
-   "fieldname": "children_five",
-   "fieldtype": "Int",
-   "label": "Children (<= 5Yrs)"
-  },
-  {
-   "fieldname": "children_six_nine",
-   "fieldtype": "Int",
-   "label": "Children (6-9 Yrs)"
-  },
-  {
-   "fieldname": "adolescents",
-   "fieldtype": "Int",
-   "label": "Adolescents (10\u201319yrs)"
-  },
-  {
-   "fieldname": "pregnant_women",
-   "fieldtype": "Int",
-   "label": "Pregnant Women: "
-  },
-  {
-   "fieldname": "lactating_women",
-   "fieldtype": "Int",
-   "label": "Lactating Women:"
-  },
-  {
-   "fieldname": "column_break_nnmt",
+   "fieldname": "column_break_zjay",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "elderly",
-   "fieldtype": "Int",
-   "label": "Elderly (>65yrs):"
+   "fieldname": "informant",
+   "fieldtype": "Data",
+   "label": "Informant"
   },
   {
-   "collapsible": 1,
-   "fieldname": "vital_events_count_in_the_family_during_past_one_year_section",
+   "fieldname": "informant_no",
+   "fieldtype": "Phone",
+   "label": "Informant Mobile No."
+  },
+  {
+   "fieldname": "family_structure_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Family Structure Details"
+  },
+  {
+   "fieldname": "family_structure_details_section",
    "fieldtype": "Section Break",
-   "label": "Vital events count in the family during past one year"
+   "label": "Family Structure Details"
   },
   {
-   "fieldname": "birth",
-   "fieldtype": "Int",
-   "label": "Birth"
+   "fieldname": "habitat_tab",
+   "fieldtype": "Tab Break",
+   "label": "Habitat"
   },
   {
-   "fieldname": "adoption",
-   "fieldtype": "Int",
-   "label": "Adoption"
+   "fieldname": "habitat",
+   "fieldtype": "Table",
+   "label": "Habitat",
+   "options": "Habitat"
   },
   {
-   "fieldname": "marriage",
-   "fieldtype": "Int",
-   "label": "Marriage"
-  },
-  {
-   "fieldname": "divorce",
-   "fieldtype": "Int",
-   "label": "Divorce"
-  },
-  {
-   "fieldname": "column_break_phyo",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "migration",
-   "fieldtype": "Int",
-   "label": "Migration"
-  },
-  {
-   "fieldname": "column_break_nhao",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "death",
-   "fieldtype": "Int",
-   "label": "Death"
-  },
-  {
-   "fieldname": "column_break_zkxq",
-   "fieldtype": "Column Break"
+   "fieldname": "address_html",
+   "fieldtype": "HTML",
+   "label": "Family Address"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-07-25 08:38:47.135003",
+ "modified": "2024-07-29 14:37:36.985366",
  "modified_by": "Administrator",
  "module": "Family Adoption Program",
  "name": "Family Details",

@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class StudentMaster(Document):
+class Habitat(Document):
 	pass

@@ -3,7 +3,6 @@
  "allow_rename": 1,
  "creation": "2024-07-24 15:12:33.625166",
  "doctype": "DocType",
- "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "family_structure_section",
@@ -16,8 +15,9 @@
   "education",
   "occupation",
   "monthly_income",
-  "medico_social_conditions",
-  "remarks"
+  "remarks",
+  "medico_social_conditions_section",
+  "family_health_and_social_details"
  ],
  "fields": [
   {
@@ -73,12 +73,6 @@
    "label": "Monthly Income"
   },
   {
-   "fieldname": "medico_social_conditions",
-   "fieldtype": "Float",
-   "label": "Medico Social Conditions (Years)",
-   "precision": "2"
-  },
-  {
    "fieldname": "remarks",
    "fieldtype": "Data",
    "label": "Remarks"
@@ -87,12 +81,23 @@
    "fieldname": "education",
    "fieldtype": "Data",
    "label": "Education"
+  },
+  {
+   "fieldname": "medico_social_conditions_section",
+   "fieldtype": "Section Break",
+   "label": "Medico Social Conditions "
+  },
+  {
+   "fieldname": "family_health_and_social_details",
+   "fieldtype": "Table",
+   "label": "Family Health and Social Details",
+   "options": "Family Health and Social Details"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-07-24 15:20:56.074037",
+ "modified": "2024-07-29 12:22:40.590358",
  "modified_by": "Administrator",
  "module": "Family Adoption Program",
  "name": "Family Structure",
