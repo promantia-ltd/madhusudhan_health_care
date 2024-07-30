@@ -8,15 +8,15 @@
  "field_order": [
   "student",
   "habituated_since",
-  "migrated_from",
-  "family_no",
   "religion",
   "religion_name",
+  "sub_religion",
   "column_break_vrat",
   "migration_reason",
-  "sub_religion",
+  "migrated_from",
   "mother_tongue",
   "contact_details_section",
+  "family_no",
   "address_html",
   "column_break_zjay",
   "informant",
@@ -91,6 +91,7 @@
    "options": "Hindu\nMuslim\nChristian\nSikh\nJain\nJew\nOther"
   },
   {
+   "depends_on": "eval:doc.religion == \"Other\"",
    "fieldname": "religion_name",
    "fieldtype": "Data",
    "label": "Name of religion"
@@ -152,9 +153,8 @@
   }
  ],
  "index_web_pages_for_search": 1,
- "is_submittable": 1,
  "links": [],
- "modified": "2024-07-29 14:37:36.985366",
+ "modified": "2024-07-30 09:55:05.282481",
  "modified_by": "Administrator",
  "module": "Family Adoption Program",
  "name": "Family Details",
@@ -171,7 +171,6 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
-   "submit": 1,
    "write": 1
   }
  ],

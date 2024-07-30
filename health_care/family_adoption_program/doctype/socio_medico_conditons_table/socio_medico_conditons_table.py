@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class FamilyHealthandSocialDetails(Document):
+class SocioMedicoConditonsTable(Document):
 	pass

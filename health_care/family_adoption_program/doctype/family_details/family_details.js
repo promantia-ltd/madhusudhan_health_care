@@ -10,6 +10,11 @@ frappe.ui.form.on("Family Details", {
 			frm.doc.abbr && frm.set_df_property("abbr", "read_only", 1);
 			frappe.contacts.render_address_and_contact(frm);
 			frappe.dynamic_link = {doc: frm.doc, fieldname: 'name', doctype: 'Family Details'}
+
+			frm.add_custom_button("Add Measurement", function(frm) {
+				frappe.new_doc("Measurement Details");
+			});
 		}
 	},
 });
+

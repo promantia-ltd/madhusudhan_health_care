@@ -1,0 +1,79 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:SMPC-{YYYY}-{######}",
+ "creation": "2024-07-30 09:11:16.774138",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "family_details_section",
+  "family",
+  "column_break_llhf",
+  "member_name",
+  "conditions_details_section",
+  "socio_medio_table"
+ ],
+ "fields": [
+  {
+   "fieldname": "family_details_section",
+   "fieldtype": "Section Break",
+   "label": "Family Details"
+  },
+  {
+   "fieldname": "family",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Family",
+   "options": "Family Details",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_llhf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "member_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Member Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "conditions_details_section",
+   "fieldtype": "Section Break",
+   "label": "Conditions Details"
+  },
+  {
+   "fieldname": "socio_medio_table",
+   "fieldtype": "Table",
+   "label": "Conditions",
+   "options": "Socio Medico Conditons Table"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-30 09:14:27.155575",
+ "modified_by": "Administrator",
+ "module": "Family Adoption Program",
+ "name": "Socio Medio Conditions",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

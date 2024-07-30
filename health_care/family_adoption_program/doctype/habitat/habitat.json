@@ -146,6 +146,7 @@
    "options": "Mud\nCement\nTar"
   },
   {
+   "collapsible": 1,
    "fieldname": "kitchen_section",
    "fieldtype": "Section Break",
    "label": "Kitchen"
@@ -158,6 +159,7 @@
    "options": "Separate\nPart of Living Room"
   },
   {
+   "collapsible": 1,
    "fieldname": "drinking_water_section",
    "fieldtype": "Section Break",
    "label": "Drinking water"
@@ -171,6 +173,7 @@
    "options": "Piped\nWell\nBore Well\nRO Filter\nTank"
   },
   {
+   "collapsible": 1,
    "fieldname": "bathing_area_section",
    "fieldtype": "Section Break",
    "label": "Bathing Area"
@@ -184,6 +187,7 @@
    "options": "Present\nAbsent"
   },
   {
+   "collapsible": 1,
    "fieldname": "sewage_disposal_section",
    "fieldtype": "Section Break",
    "label": "Sewage Disposal"
@@ -196,6 +200,7 @@
    "options": "Yes\nNo"
   },
   {
+   "collapsible": 1,
    "fieldname": "solid_waste_section",
    "fieldtype": "Section Break",
    "label": "Solid Waste"
@@ -207,6 +212,7 @@
    "options": "Yes\nNo"
   },
   {
+   "collapsible": 1,
    "fieldname": "economic_status_section",
    "fieldtype": "Section Break",
    "label": "Economic Status"
@@ -217,18 +223,19 @@
    "label": "Additional sources of income"
   },
   {
+   "collapsible": 1,
    "fieldname": "attachments_section",
    "fieldtype": "Section Break",
    "label": "Attachments"
   },
   {
    "fieldname": "attach_sketch",
-   "fieldtype": "Attach",
+   "fieldtype": "Attach Image",
    "label": "Sketch of the Area to House with Landmark/Road"
   },
   {
    "fieldname": "house_plan",
-   "fieldtype": "Attach",
+   "fieldtype": "Attach Image",
    "label": "House Plan"
   },
   {
@@ -807,10 +814,9 @@
   }
  ],
  "index_web_pages_for_search": 1,
- "is_submittable": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-07-29 12:46:51.705345",
+ "modified": "2024-07-30 09:40:31.087068",
  "modified_by": "Administrator",
  "module": "Family Adoption Program",
  "name": "Habitat",
