@@ -27,7 +27,13 @@
   "section_break_xv5m",
   "amended_from",
   "habitat_tab",
-  "habitat"
+  "habitat",
+  "attachments_tab",
+  "attachments_section",
+  "attach_sketch",
+  "house_plan",
+  "column_break_bhhz",
+  "any_remarks"
  ],
  "fields": [
   {
@@ -150,11 +156,40 @@
    "fieldname": "address_html",
    "fieldtype": "HTML",
    "label": "Family Address"
+  },
+  {
+   "fieldname": "attachments_tab",
+   "fieldtype": "Tab Break",
+   "label": "Attachments"
+  },
+  {
+   "fieldname": "attachments_section",
+   "fieldtype": "Section Break",
+   "label": "Attachments"
+  },
+  {
+   "fieldname": "attach_sketch",
+   "fieldtype": "Attach Image",
+   "label": "Sketch of the Area to House with Landmark/Road"
+  },
+  {
+   "fieldname": "house_plan",
+   "fieldtype": "Attach Image",
+   "label": "House Plan"
+  },
+  {
+   "fieldname": "column_break_bhhz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "any_remarks",
+   "fieldtype": "Small Text",
+   "label": "Any Remarks"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-30 09:55:05.282481",
+ "modified": "2024-07-30 18:13:09.017675",
  "modified_by": "Administrator",
  "module": "Family Adoption Program",
  "name": "Family Details",
