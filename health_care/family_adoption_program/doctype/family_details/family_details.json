@@ -135,8 +135,10 @@
   "attachments_tab",
   "attachments_section",
   "attach_sketch",
-  "house_plan",
+  "image_of_area_to_house",
   "column_break_bhhz",
+  "house_plan",
+  "house_plan_image",
   "any_remarks"
  ],
  "fields": [
@@ -903,11 +905,23 @@
    "fieldtype": "Select",
    "label": "Old Age Pension",
    "options": "Yes\nNo\nNA"
+  },
+  {
+   "fieldname": "image_of_area_to_house",
+   "fieldtype": "Image",
+   "label": "Image of Area to House ",
+   "options": "attach_sketch"
+  },
+  {
+   "fieldname": "house_plan_image",
+   "fieldtype": "Image",
+   "label": "House Plan Image",
+   "options": "house_plan"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-31 10:32:59.472114",
+ "modified": "2024-07-31 10:51:07.419271",
  "modified_by": "Administrator",
  "module": "Family Adoption Program",
  "name": "Family Details",
