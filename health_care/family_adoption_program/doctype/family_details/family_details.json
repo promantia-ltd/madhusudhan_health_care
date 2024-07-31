@@ -6,6 +6,7 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "family_details_section",
   "student",
   "habituated_since",
   "religion",
@@ -139,7 +140,9 @@
   "column_break_bhhz",
   "house_plan",
   "house_plan_image",
-  "any_remarks"
+  "remarks_section",
+  "any_remarks",
+  "connections_tab"
  ],
  "fields": [
   {
@@ -193,7 +196,7 @@
   {
    "fieldname": "family_structure_details",
    "fieldtype": "Table",
-   "label": "Family Stucture Details",
+   "label": "Family Member Details",
    "options": "Family Structure"
   },
   {
@@ -209,6 +212,7 @@
    "label": "Name of religion"
   },
   {
+   "depends_on": "eval:doc.religion != \"\"",
    "fieldname": "sub_religion",
    "fieldtype": "Data",
    "label": "Caste / Sub Religion"
@@ -240,17 +244,17 @@
   {
    "fieldname": "family_structure_details_tab",
    "fieldtype": "Tab Break",
-   "label": "Family Structure Details"
+   "label": "Family Members"
   },
   {
    "fieldname": "family_structure_details_section",
    "fieldtype": "Section Break",
-   "label": "Family Structure Details"
+   "label": "Family Member Details"
   },
   {
    "fieldname": "habitat_tab",
    "fieldtype": "Tab Break",
-   "label": "Habitat"
+   "label": "Additional Information"
   },
   {
    "fieldname": "address_html",
@@ -287,6 +291,7 @@
    "label": "Any Remarks"
   },
   {
+   "collapsible": 1,
    "fieldname": "environment_section",
    "fieldtype": "Section Break",
    "label": "Environment"
@@ -917,11 +922,27 @@
    "fieldtype": "Image",
    "label": "House Plan Image",
    "options": "house_plan"
+  },
+  {
+   "fieldname": "family_details_section",
+   "fieldtype": "Section Break",
+   "label": "Family Details"
+  },
+  {
+   "fieldname": "remarks_section",
+   "fieldtype": "Section Break",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "connections_tab",
+   "fieldtype": "Tab Break",
+   "label": "Connections",
+   "show_dashboard": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-31 10:51:07.419271",
+ "modified": "2024-07-31 13:37:45.399808",
  "modified_by": "Administrator",
  "module": "Family Adoption Program",
  "name": "Family Details",

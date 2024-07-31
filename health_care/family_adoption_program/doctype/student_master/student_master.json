@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{DD}-{MM}-{YYYY}-ROLLNO-{roll_no}",
+ "autoname": "format:RN-{roll_no}-{YYYY}",
  "creation": "2024-07-24 14:45:07.728468",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -12,7 +12,8 @@
   "column_break_oufj",
   "roll_no",
   "section_break_iexg",
-  "amended_from"
+  "amended_from",
+  "connections_tab"
  ],
  "fields": [
   {
@@ -57,12 +58,17 @@
    "fieldtype": "Phone",
    "label": "Mobile No.",
    "reqd": 1
+  },
+  {
+   "fieldname": "connections_tab",
+   "fieldtype": "Tab Break",
+   "label": "Connections"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-07-29 10:34:14.736031",
+ "modified": "2024-07-31 15:28:59.733421",
  "modified_by": "Administrator",
  "module": "Family Adoption Program",
  "name": "Student Master",
@@ -87,5 +93,5 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
- "title_field": "roll_no"
+ "title_field": "student_name"
 }

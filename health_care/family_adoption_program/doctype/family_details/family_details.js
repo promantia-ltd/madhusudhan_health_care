@@ -15,7 +15,7 @@ frappe.ui.form.on("Family Details", {
 					: [];
 
 				if (family_member_names.length === 0) {
-					frappe.msgprint(__('Please create a family member first.'));
+					frappe.msgprint(__('Please add a family member first.'));
 					return;
 				}
 
@@ -27,18 +27,66 @@ frappe.ui.form.on("Family Details", {
 							fieldname: 'family_member_name',
 							fieldtype: 'Select',
 							options: family_member_names
+						},
+						{
+							label: 'Height (Cms)',
+							fieldname: 'height',
+							fieldtype: 'Float'
+						},
+						{
+							label: 'Weight (Kg)',
+							fieldname: 'weight',
+							fieldtype: 'Float'
+						},
+						{
+							label: 'BMI',
+							fieldname: 'bmi',
+							fieldtype: 'Float'
+						},
+						{
+							label: 'Waist (Cms)',
+							fieldname: 'waist',
+							fieldtype: 'Float'
+						},
+						{
+							label: 'Hip C (Cms)',
+							fieldname: 'hip_c_cm',
+							fieldtype: 'Float'
+						},
+						{
+							label: 'WHR',
+							fieldname: 'whr',
+							fieldtype: 'Float'
+						},
+						{
+							label: 'RBS (mg%)',
+							fieldname: 'rbs',
+							fieldtype: 'Float'
+						},{
+							label: 'BP (mm hg)',
+							fieldname: 'bp_mm_hg',
+							fieldtype: 'Float'
 						}
 					],
-					primary_action_label: 'Create Measurement',
+					primary_action_label: 'Add Measurement',
 					primary_action(values) {
-						frappe.new_doc("Measurement Details", {
-							family_details: frm.doc.name,
-							family_member_name: values.family_member_name
+						frappe.db.insert({
+							doctype: 'Measurement Details',
+							family_details : frm.doc.name,
+							family_member_name : values.family_member_name,
+							height: values.height,
+							weight: values.weight,
+							waist :values.waist,
+							hip_c_cm: values.hip_c_cm,
+							rbs : values.rbs,
+							bp_mm_hg : values.bp_mm_hg,
+							bmi: values.bmi,
+							whr: values.whr
 						});
 						dialog.hide();
 					}
-				});
-				
+					
+				});				
 				dialog.show();
 			});
 		}

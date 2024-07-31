@@ -84,7 +84,8 @@
   {
    "fieldname": "bmi",
    "fieldtype": "Float",
-   "label": "BMI"
+   "label": "BMI",
+   "reqd": 1
   },
   {
    "fieldname": "hip_c_cm",
@@ -113,7 +114,8 @@
   {
    "fieldname": "whr",
    "fieldtype": "Float",
-   "label": "WHR"
+   "label": "WHR",
+   "reqd": 1
   },
   {
    "fieldname": "family_details",
@@ -132,7 +134,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-30 09:50:10.620367",
+ "modified": "2024-07-31 15:12:41.068875",
  "modified_by": "Administrator",
  "module": "Family Adoption Program",
  "name": "Measurement Details",
