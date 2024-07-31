@@ -27,7 +27,111 @@
   "section_break_xv5m",
   "amended_from",
   "habitat_tab",
-  "habitat",
+  "environment_section",
+  "approach_road",
+  "stray_animals_near_house",
+  "livestock",
+  "source_of_pollution",
+  "set_back",
+  "roof_material",
+  "cracks",
+  "floor_material",
+  "total_floor_space_of_the_living_room",
+  "ventilation",
+  "overcrowding",
+  "column_break_codq",
+  "accident_prone_areas_around_house",
+  "vector_breeding_places",
+  "infestation_of_rodents",
+  "is_the_surrounding_prone_for_flooding",
+  "house_type",
+  "roof_condition",
+  "dampness",
+  "number_of_living_rooms",
+  "artificial_ventilation",
+  "cross_ventilation",
+  "column_break_zxvl",
+  "streetlights_near_house",
+  "pet_animals",
+  "environment_pollution",
+  "indiscriminate_disposal_of_waste_around_house",
+  "type_of_house",
+  "wall_material",
+  "floor_condition",
+  "area_of_windows_doors",
+  "per_capita_floor_space_in_the_house",
+  "lighting",
+  "kitchen_section",
+  "kitchen",
+  "cooking_fuel",
+  "smoke_outlet",
+  "washing_area_for_utensils",
+  "dustbin_status",
+  "column_break_ezfx",
+  "platform",
+  "storage_of_cooked_food",
+  "kitchen_lighting",
+  "sullage_disposal",
+  "cover_status",
+  "column_break_miur",
+  "floor_type",
+  "storage_of_raw_food_items",
+  "water_supply",
+  "appliances_present",
+  "pests_inside_kitchen",
+  "drinking_water_section",
+  "water_source",
+  "water_supply_status",
+  "storage_of_drinking_water",
+  "purification_method",
+  "column_break_vhqm",
+  "distance_of_drinking_water_source_from_house",
+  "intermittent_frequency",
+  "household_purification_of_water",
+  "bathing_area_section",
+  "privacy",
+  "accident_prone_areas",
+  "column_break_jiwt",
+  "maintenance",
+  "drainage",
+  "sewage_disposal_section",
+  "sanitary_latrine",
+  "distance_of_sharedcommunity_latrine",
+  "latrine_connection_type",
+  "hand_washing_after_using_toilet",
+  "column_break_kskn",
+  "type_of_latrine",
+  "distance_between_insanitary_toilet_and_well",
+  "open_air_defecation_practice",
+  "children_defecateurinat_near_the_house",
+  "solid_waste_section",
+  "segregation_into_dry_and_wet",
+  "solid_waste_disposal_method",
+  "solid_waste_disposal_frequency",
+  "column_break_lvqw",
+  "solid_waste_collection_method",
+  "collector_information",
+  "sanitary_paddiaper_disposal",
+  "economic_status_section",
+  "additional_income",
+  "per_capita_income",
+  "dependency_ratio",
+  "social_security_schemes",
+  "health_insurance",
+  "disability_pension",
+  "column_break_ahbn",
+  "gross_income_per_month",
+  "economic_status",
+  "young_age_dependency",
+  "esi",
+  "widow_pension",
+  "remarks_if_pension_not_availed",
+  "column_break_rgul",
+  "family_size",
+  "socio_economic_status",
+  "old_age_dependency_ratio",
+  "life_insurance",
+  "old_age_pension",
   "attachments_tab",
   "attachments_section",
   "attach_sketch",
@@ -147,12 +251,6 @@
    "label": "Habitat"
   },
   {
-   "fieldname": "habitat",
-   "fieldtype": "Table",
-   "label": "Habitat",
-   "options": "Habitat"
-  },
-  {
    "fieldname": "address_html",
    "fieldtype": "HTML",
    "label": "Family Address"
@@ -185,11 +283,631 @@
    "fieldname": "any_remarks",
    "fieldtype": "Small Text",
    "label": "Any Remarks"
+  },
+  {
+   "fieldname": "environment_section",
+   "fieldtype": "Section Break",
+   "label": "Environment"
+  },
+  {
+   "fieldname": "approach_road",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Approach Road",
+   "options": "Mud\nCement\nTar"
+  },
+  {
+   "fieldname": "column_break_codq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "accident_prone_areas_around_house",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Accident prone areas around house",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "column_break_zxvl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Present",
+   "fieldname": "streetlights_near_house",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Streetlights near house",
+   "options": "Present\nAbsent"
+  },
+  {
+   "default": "None",
+   "fieldname": "stray_animals_near_house",
+   "fieldtype": "Select",
+   "label": "Stray animals near house",
+   "options": "None\nDog\nCat\nCow\nMonkey"
+  },
+  {
+   "fieldname": "livestock",
+   "fieldtype": "Int",
+   "label": "Livestock",
+   "non_negative": 1
+  },
+  {
+   "default": "Present",
+   "fieldname": "vector_breeding_places",
+   "fieldtype": "Select",
+   "label": "Vector Breeding places",
+   "options": "Present\nAbsent"
+  },
+  {
+   "default": "Yes",
+   "fieldname": "infestation_of_rodents",
+   "fieldtype": "Select",
+   "label": "Infestation of rodents",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "pet_animals",
+   "fieldtype": "Int",
+   "label": "Pet Animals",
+   "non_negative": 1
+  },
+  {
+   "default": "Air",
+   "fieldname": "environment_pollution",
+   "fieldtype": "Select",
+   "label": "Environment pollution",
+   "options": "Air\nWater\nNoise"
+  },
+  {
+   "fieldname": "source_of_pollution",
+   "fieldtype": "Data",
+   "label": "Source of pollution"
+  },
+  {
+   "default": "Absent",
+   "fieldname": "set_back",
+   "fieldtype": "Select",
+   "label": "Set back",
+   "options": "Absent\n1 sided\n2 sided\n3 sided"
+  },
+  {
+   "default": "RCC",
+   "fieldname": "roof_material",
+   "fieldtype": "Select",
+   "label": "Roof Material",
+   "options": "RCC\nTile\nZinc sheet\nThatched\nOthers"
+  },
+  {
+   "default": "No",
+   "fieldname": "cracks",
+   "fieldtype": "Select",
+   "label": "Cracks",
+   "options": "No\nYes - Roof\nYes - Wall\nYes - Floor"
+  },
+  {
+   "default": "Cement",
+   "fieldname": "floor_material",
+   "fieldtype": "Select",
+   "label": "Floor Material",
+   "options": "Cement\nMud\nTile"
+  },
+  {
+   "fieldname": "total_floor_space_of_the_living_room",
+   "fieldtype": "Float",
+   "label": "Total floor space of the living room",
+   "precision": "2"
+  },
+  {
+   "fieldname": "ventilation",
+   "fieldtype": "Select",
+   "label": "Ventilation",
+   "options": "Adequate\nInadequate"
+  },
+  {
+   "fieldname": "overcrowding",
+   "fieldtype": "Select",
+   "label": "Overcrowding",
+   "options": "Present\nabsent"
+  },
+  {
+   "default": "Yes",
+   "fieldname": "is_the_surrounding_prone_for_flooding",
+   "fieldtype": "Select",
+   "label": "Is the surrounding prone for flooding",
+   "options": "Yes\nNo"
+  },
+  {
+   "default": "Own",
+   "fieldname": "house_type",
+   "fieldtype": "Select",
+   "label": "House type",
+   "options": "Own\nRented\nLeased"
+  },
+  {
+   "fieldname": "roof_condition",
+   "fieldtype": "Select",
+   "label": "Roof Condition",
+   "options": "Intact\nLeaking"
+  },
+  {
+   "fieldname": "dampness",
+   "fieldtype": "Select",
+   "label": "Dampness",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "number_of_living_rooms",
+   "fieldtype": "Int",
+   "label": "Number of living rooms"
+  },
+  {
+   "fieldname": "artificial_ventilation",
+   "fieldtype": "Select",
+   "label": "Artificial ventilation",
+   "options": "No\nYes-AC\nYes-Fan\nYes-Exhaust fans"
+  },
+  {
+   "default": "Yes",
+   "fieldname": "cross_ventilation",
+   "fieldtype": "Select",
+   "label": "Cross ventilation",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "indiscriminate_disposal_of_waste_around_house",
+   "fieldtype": "Data",
+   "label": "Indiscriminate disposal of waste around house"
+  },
+  {
+   "fieldname": "type_of_house",
+   "fieldtype": "Select",
+   "label": "Type of house",
+   "options": "Pucca\nKuccha\nSemi-Pucca"
+  },
+  {
+   "default": "Cement",
+   "fieldname": "wall_material",
+   "fieldtype": "Select",
+   "label": "Wall Material",
+   "options": "Cement\nMud\nBrick\nStone"
+  },
+  {
+   "fieldname": "floor_condition",
+   "fieldtype": "Select",
+   "label": "Floor Condition",
+   "options": "Even\nUneven"
+  },
+  {
+   "fieldname": "area_of_windows_doors",
+   "fieldtype": "Float",
+   "label": "Area of Windows & Doors in the Living Rooms",
+   "precision": "2"
+  },
+  {
+   "fieldname": "per_capita_floor_space_in_the_house",
+   "fieldtype": "Float",
+   "label": "Per Capita Floor Space in the House",
+   "precision": "2"
+  },
+  {
+   "fieldname": "lighting",
+   "fieldtype": "Select",
+   "label": "Lighting",
+   "options": "Adequate\nInadequate"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "kitchen_section",
+   "fieldtype": "Section Break",
+   "label": "Kitchen"
+  },
+  {
+   "fieldname": "kitchen",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Kitchen",
+   "options": "Separate\nPart of Living Room"
+  },
+  {
+   "fieldname": "cooking_fuel",
+   "fieldtype": "Select",
+   "label": "Cooking fuel",
+   "options": "Coal\nFirewood\nKerosene\nLPG\nElectricity"
+  },
+  {
+   "default": "Present",
+   "fieldname": "smoke_outlet",
+   "fieldtype": "Select",
+   "label": "Smoke Outlet",
+   "options": "Present\nAbsent"
+  },
+  {
+   "fieldname": "washing_area_for_utensils",
+   "fieldtype": "Select",
+   "label": "Washing area for utensils",
+   "options": "Present\nAbsent"
+  },
+  {
+   "fieldname": "cover_status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Cover Status",
+   "options": "Covered\nNot covered"
+  },
+  {
+   "fieldname": "column_break_ezfx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "platform",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Platform",
+   "options": "Present\nAbsent"
+  },
+  {
+   "fieldname": "storage_of_cooked_food",
+   "fieldtype": "Select",
+   "label": "Storage of cooked food",
+   "options": "Covered\nUncovered vessels"
+  },
+  {
+   "fieldname": "kitchen_lighting",
+   "fieldtype": "Select",
+   "label": "Lighting",
+   "options": "Adequate\nInadequate"
+  },
+  {
+   "fieldname": "sullage_disposal",
+   "fieldtype": "Select",
+   "label": "Sullage disposal",
+   "options": "Open drain\nClosed drain\nSoakage pit"
+  },
+  {
+   "fieldname": "dustbin_status",
+   "fieldtype": "Select",
+   "label": "Dustbin Status",
+   "options": "Absent\nPresent"
+  },
+  {
+   "fieldname": "column_break_miur",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "floor_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Floor type",
+   "options": "Kuccha\nPucca"
+  },
+  {
+   "fieldname": "storage_of_raw_food_items",
+   "fieldtype": "Select",
+   "label": "Storage of raw food items",
+   "options": "Proper\nImproper"
+  },
+  {
+   "fieldname": "water_supply",
+   "fieldtype": "Select",
+   "label": "Water supply",
+   "options": "Present\nAbsent"
+  },
+  {
+   "fieldname": "appliances_present",
+   "fieldtype": "Select",
+   "label": "Appliances present",
+   "options": "Refrigerator\nRO filter\nMixer"
+  },
+  {
+   "fieldname": "pests_inside_kitchen",
+   "fieldtype": "Select",
+   "label": "Pests inside kitchen",
+   "options": "No\nCockroach\nFly"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "drinking_water_section",
+   "fieldtype": "Section Break",
+   "label": "Drinking water"
+  },
+  {
+   "default": "Piped",
+   "fieldname": "water_source",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Source",
+   "options": "Piped\nWell\nBore Well\nRO Filter\nTank"
+  },
+  {
+   "fieldname": "water_supply_status",
+   "fieldtype": "Select",
+   "label": "Water Supply Status",
+   "options": "Continuous\nIntermittent"
+  },
+  {
+   "fieldname": "storage_of_drinking_water",
+   "fieldtype": "Select",
+   "label": "Storage of drinking water",
+   "options": "open container\nclosed container"
+  },
+  {
+   "fieldname": "purification_method",
+   "fieldtype": "Select",
+   "label": "Purification Method",
+   "options": "NA\nBoiling\nstraining\nHH RO filter"
+  },
+  {
+   "fieldname": "column_break_vhqm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "distance_of_drinking_water_source_from_house",
+   "fieldtype": "Data",
+   "label": "Distance Of drinking water Source from House"
+  },
+  {
+   "fieldname": "intermittent_frequency",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Intermittent Frequency"
+  },
+  {
+   "fieldname": "household_purification_of_water",
+   "fieldtype": "Select",
+   "label": "Household purification of water",
+   "options": "Yes\nNo"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "bathing_area_section",
+   "fieldtype": "Section Break",
+   "label": "Bathing Area"
+  },
+  {
+   "fieldname": "privacy",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Privacy",
+   "options": "Present\nAbsent"
+  },
+  {
+   "fieldname": "accident_prone_areas",
+   "fieldtype": "Select",
+   "label": "Accident prone areas",
+   "options": "present\nabsent"
+  },
+  {
+   "fieldname": "column_break_jiwt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "maintenance",
+   "fieldtype": "Select",
+   "label": "Maintenance",
+   "options": "well maintained\npoorly maintained"
+  },
+  {
+   "fieldname": "drainage",
+   "fieldtype": "Select",
+   "label": "Drainage",
+   "options": "open\nclosed"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "sewage_disposal_section",
+   "fieldtype": "Section Break",
+   "label": "Sewage Disposal"
+  },
+  {
+   "default": "Yes",
+   "fieldname": "sanitary_latrine",
+   "fieldtype": "Select",
+   "label": "Sanitary Latrine",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "distance_of_sharedcommunity_latrine",
+   "fieldtype": "Float",
+   "label": "Distance of Shared/Community Latrine"
+  },
+  {
+   "fieldname": "latrine_connection_type",
+   "fieldtype": "Select",
+   "label": "Latrine Connection Type",
+   "options": "Septic tank\nUnderground sewerage"
+  },
+  {
+   "default": "With soap",
+   "fieldname": "hand_washing_after_using_toilet",
+   "fieldtype": "Select",
+   "label": "Hand washing after using toilet",
+   "options": "With soap\nWithout soap\nNo"
+  },
+  {
+   "fieldname": "column_break_kskn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Own",
+   "fieldname": "type_of_latrine",
+   "fieldtype": "Select",
+   "label": "Type of Latrine",
+   "options": "Own\nShared\nCommunity\nAbsent"
+  },
+  {
+   "fieldname": "distance_between_insanitary_toilet_and_well",
+   "fieldtype": "Data",
+   "label": "Distance between Insanitary Toilet and Well"
+  },
+  {
+   "default": "Yes",
+   "fieldname": "open_air_defecation_practice",
+   "fieldtype": "Select",
+   "label": "Open air defecation practice",
+   "options": "Yes\nNo"
+  },
+  {
+   "default": "Yes",
+   "fieldname": "children_defecateurinat_near_the_house",
+   "fieldtype": "Select",
+   "label": "Children Defecate/Urinat Near the House",
+   "options": "Yes\nNo"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "solid_waste_section",
+   "fieldtype": "Section Break",
+   "label": "Solid Waste"
+  },
+  {
+   "fieldname": "segregation_into_dry_and_wet",
+   "fieldtype": "Select",
+   "label": "Segregation into Dry and Wet",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "solid_waste_disposal_method",
+   "fieldtype": "Select",
+   "label": "Solid Waste Disposal Method",
+   "options": "Thrown\nCollected"
+  },
+  {
+   "fieldname": "solid_waste_disposal_frequency",
+   "fieldtype": "Int",
+   "label": "Solid Waste Disposal Frequency"
+  },
+  {
+   "fieldname": "column_break_lvqw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "solid_waste_collection_method",
+   "fieldtype": "Select",
+   "label": "Solid Waste Collection Method",
+   "options": "Covered Containers\nUncovered Containers"
+  },
+  {
+   "fieldname": "collector_information",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Collector Information"
+  },
+  {
+   "fieldname": "sanitary_paddiaper_disposal",
+   "fieldtype": "Data",
+   "label": "Sanitary Pad/Diaper Disposal"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "economic_status_section",
+   "fieldtype": "Section Break",
+   "label": "Economic Status"
+  },
+  {
+   "fieldname": "additional_income",
+   "fieldtype": "Currency",
+   "label": "Additional sources of income"
+  },
+  {
+   "fieldname": "per_capita_income",
+   "fieldtype": "Float",
+   "label": "Per Capita Income"
+  },
+  {
+   "fieldname": "dependency_ratio",
+   "fieldtype": "Int",
+   "label": "Dependency ratio"
+  },
+  {
+   "fieldname": "social_security_schemes",
+   "fieldtype": "Data",
+   "label": "Social Security Schemes"
+  },
+  {
+   "fieldname": "health_insurance",
+   "fieldtype": "Select",
+   "label": "Health Insurance",
+   "options": "AB-Ark\nPrivate\nKGID\nOthers"
+  },
+  {
+   "fieldname": "disability_pension",
+   "fieldtype": "Select",
+   "label": "Disability Pension",
+   "options": "Yes\nNo\nNA"
+  },
+  {
+   "fieldname": "column_break_ahbn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gross_income_per_month",
+   "fieldtype": "Float",
+   "label": "Gross Income per Month"
+  },
+  {
+   "fieldname": "economic_status",
+   "fieldtype": "Select",
+   "label": "Economic Status",
+   "options": "APL\nBPL\nAAY\nothers"
+  },
+  {
+   "fieldname": "young_age_dependency",
+   "fieldtype": "Int",
+   "label": "Young Age Dependency"
+  },
+  {
+   "fieldname": "esi",
+   "fieldtype": "Select",
+   "label": "ESI",
+   "options": "Yes\nNo\nNA"
+  },
+  {
+   "fieldname": "widow_pension",
+   "fieldtype": "Select",
+   "label": "Widow Pension",
+   "options": "Yes\nNo\nNA"
+  },
+  {
+   "fieldname": "remarks_if_pension_not_availed",
+   "fieldtype": "Data",
+   "label": "Remarks if Pension Not Availed"
+  },
+  {
+   "fieldname": "column_break_rgul",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "family_size",
+   "fieldtype": "Int",
+   "label": "Family Size"
+  },
+  {
+   "fieldname": "socio_economic_status",
+   "fieldtype": "Data",
+   "label": "Socio Economic status"
+  },
+  {
+   "fieldname": "old_age_dependency_ratio",
+   "fieldtype": "Int",
+   "label": "Old age dependency Ratio"
+  },
+  {
+   "fieldname": "life_insurance",
+   "fieldtype": "Select",
+   "label": "Life Insurance",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "old_age_pension",
+   "fieldtype": "Select",
+   "label": "Old Age Pension",
+   "options": "Yes\nNo\nNA"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-30 18:13:09.017675",
+ "modified": "2024-07-31 10:32:59.472114",
  "modified_by": "Administrator",
  "module": "Family Adoption Program",
  "name": "Family Details",
