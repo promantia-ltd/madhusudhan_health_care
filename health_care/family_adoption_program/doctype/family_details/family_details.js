@@ -31,41 +31,49 @@ frappe.ui.form.on("Family Details", {
 						{
 							label: 'Height (Cms)',
 							fieldname: 'height',
-							fieldtype: 'Float'
+							fieldtype: 'Float',
+							precision: 2
 						},
 						{
 							label: 'Weight (Kg)',
 							fieldname: 'weight',
-							fieldtype: 'Float'
+							fieldtype: 'Float',
+							precision: 2
 						},
 						{
 							label: 'BMI',
 							fieldname: 'bmi',
-							fieldtype: 'Float'
+							fieldtype: 'Float',
+							precision: 2
 						},
 						{
 							label: 'Waist (Cms)',
 							fieldname: 'waist',
-							fieldtype: 'Float'
+							fieldtype: 'Float',
+							precision: 2
 						},
 						{
 							label: 'Hip C (Cms)',
 							fieldname: 'hip_c_cm',
-							fieldtype: 'Float'
+							fieldtype: 'Float',
+							precision: 2
 						},
 						{
 							label: 'WHR',
 							fieldname: 'whr',
-							fieldtype: 'Float'
+							fieldtype: 'Float',
+							precision: 2
 						},
 						{
 							label: 'RBS (mg%)',
 							fieldname: 'rbs',
-							fieldtype: 'Float'
+							fieldtype: 'Float',
+							precision: 2
 						},{
 							label: 'BP (mm hg)',
 							fieldname: 'bp_mm_hg',
-							fieldtype: 'Float'
+							fieldtype: 'Float',
+							precision: 2
 						}
 					],
 					primary_action_label: 'Add Measurement',

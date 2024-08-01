@@ -716,7 +716,8 @@
   {
    "fieldname": "distance_of_sharedcommunity_latrine",
    "fieldtype": "Float",
-   "label": "Distance of Shared/Community Latrine"
+   "label": "Distance of Shared/Community Latrine",
+   "precision": "2"
   },
   {
    "fieldname": "latrine_connection_type",
@@ -819,7 +820,8 @@
   {
    "fieldname": "per_capita_income",
    "fieldtype": "Float",
-   "label": "Per Capita Income"
+   "label": "Per Capita Income",
+   "precision": "2"
   },
   {
    "fieldname": "dependency_ratio",
@@ -850,7 +852,8 @@
   {
    "fieldname": "gross_income_per_month",
    "fieldtype": "Float",
-   "label": "Gross Income per Month"
+   "label": "Gross Income per Month",
+   "precision": "2"
   },
   {
    "fieldname": "economic_status",
@@ -942,7 +945,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-31 13:37:45.399808",
+ "modified": "2024-08-01 10:35:51.975927",
  "modified_by": "Administrator",
  "module": "Family Adoption Program",
  "name": "Family Details",
