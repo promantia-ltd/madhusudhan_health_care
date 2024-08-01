@@ -301,7 +301,7 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Approach Road",
-   "options": "Mud\nCement\nTar"
+   "options": "\nMud\nCement\nTar"
   },
   {
    "fieldname": "column_break_codq",
@@ -319,19 +319,17 @@
    "fieldtype": "Column Break"
   },
   {
-   "default": "Present",
    "fieldname": "streetlights_near_house",
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Streetlights near house",
-   "options": "Present\nAbsent"
+   "options": "\nPresent\nAbsent"
   },
   {
-   "default": "None",
    "fieldname": "stray_animals_near_house",
    "fieldtype": "Select",
    "label": "Stray animals near house",
-   "options": "None\nDog\nCat\nCow\nMonkey"
+   "options": "\nNone\nDog\nCat\nCow\nMonkey"
   },
   {
    "fieldname": "livestock",
@@ -340,18 +338,16 @@
    "non_negative": 1
   },
   {
-   "default": "Present",
    "fieldname": "vector_breeding_places",
    "fieldtype": "Select",
    "label": "Vector Breeding places",
-   "options": "Present\nAbsent"
+   "options": "\nPresent\nAbsent"
   },
   {
-   "default": "Yes",
    "fieldname": "infestation_of_rodents",
    "fieldtype": "Select",
    "label": "Infestation of rodents",
-   "options": "Yes\nNo"
+   "options": "\nYes\nNo"
   },
   {
    "fieldname": "pet_animals",
@@ -360,11 +356,10 @@
    "non_negative": 1
   },
   {
-   "default": "Air",
    "fieldname": "environment_pollution",
    "fieldtype": "Select",
    "label": "Environment pollution",
-   "options": "Air\nWater\nNoise"
+   "options": "\nAir\nWater\nNoise"
   },
   {
    "fieldname": "source_of_pollution",
@@ -372,32 +367,28 @@
    "label": "Source of pollution"
   },
   {
-   "default": "Absent",
    "fieldname": "set_back",
    "fieldtype": "Select",
    "label": "Set back",
-   "options": "Absent\n1 sided\n2 sided\n3 sided"
+   "options": "\nAbsent\n1 sided\n2 sided\n3 sided"
   },
   {
-   "default": "RCC",
    "fieldname": "roof_material",
    "fieldtype": "Select",
    "label": "Roof Material",
-   "options": "RCC\nTile\nZinc sheet\nThatched\nOthers"
+   "options": "\nRCC\nTile\nZinc sheet\nThatched\nOthers"
   },
   {
-   "default": "No",
    "fieldname": "cracks",
    "fieldtype": "Select",
    "label": "Cracks",
-   "options": "No\nYes - Roof\nYes - Wall\nYes - Floor"
+   "options": "\nNo\nYes - Roof\nYes - Wall\nYes - Floor"
   },
   {
-   "default": "Cement",
    "fieldname": "floor_material",
    "fieldtype": "Select",
    "label": "Floor Material",
-   "options": "Cement\nMud\nTile"
+   "options": "\nCement\nMud\nTile"
   },
   {
    "fieldname": "total_floor_space_of_the_living_room",
@@ -409,39 +400,37 @@
    "fieldname": "ventilation",
    "fieldtype": "Select",
    "label": "Ventilation",
-   "options": "Adequate\nInadequate"
+   "options": "\nAdequate\nInadequate"
   },
   {
    "fieldname": "overcrowding",
    "fieldtype": "Select",
    "label": "Overcrowding",
-   "options": "Present\nabsent"
+   "options": "\nPresent\nabsent"
   },
   {
-   "default": "Yes",
    "fieldname": "is_the_surrounding_prone_for_flooding",
    "fieldtype": "Select",
    "label": "Is the surrounding prone for flooding",
-   "options": "Yes\nNo"
+   "options": "\nYes\nNo"
   },
   {
-   "default": "Own",
    "fieldname": "house_type",
    "fieldtype": "Select",
    "label": "House type",
-   "options": "Own\nRented\nLeased"
+   "options": "\nOwn\nRented\nLeased"
   },
   {
    "fieldname": "roof_condition",
    "fieldtype": "Select",
    "label": "Roof Condition",
-   "options": "Intact\nLeaking"
+   "options": "\nIntact\nLeaking"
   },
   {
    "fieldname": "dampness",
    "fieldtype": "Select",
    "label": "Dampness",
-   "options": "Yes\nNo"
+   "options": "\nYes\nNo"
   },
   {
    "fieldname": "number_of_living_rooms",
@@ -452,14 +441,13 @@
    "fieldname": "artificial_ventilation",
    "fieldtype": "Select",
    "label": "Artificial ventilation",
-   "options": "No\nYes-AC\nYes-Fan\nYes-Exhaust fans"
+   "options": "\nNo\nYes-AC\nYes-Fan\nYes-Exhaust fans"
   },
   {
-   "default": "Yes",
    "fieldname": "cross_ventilation",
    "fieldtype": "Select",
    "label": "Cross ventilation",
-   "options": "Yes\nNo"
+   "options": "\nYes\nNo"
   },
   {
    "fieldname": "indiscriminate_disposal_of_waste_around_house",
@@ -470,20 +458,19 @@
    "fieldname": "type_of_house",
    "fieldtype": "Select",
    "label": "Type of house",
-   "options": "Pucca\nKuccha\nSemi-Pucca"
+   "options": "\nPucca\nKuccha\nSemi-Pucca"
   },
   {
-   "default": "Cement",
    "fieldname": "wall_material",
    "fieldtype": "Select",
    "label": "Wall Material",
-   "options": "Cement\nMud\nBrick\nStone"
+   "options": "\nCement\nMud\nBrick\nStone"
   },
   {
    "fieldname": "floor_condition",
    "fieldtype": "Select",
    "label": "Floor Condition",
-   "options": "Even\nUneven"
+   "options": "\nEven\nUneven"
   },
   {
    "fieldname": "area_of_windows_doors",
@@ -501,7 +488,7 @@
    "fieldname": "lighting",
    "fieldtype": "Select",
    "label": "Lighting",
-   "options": "Adequate\nInadequate"
+   "options": "\nAdequate\nInadequate"
   },
   {
    "collapsible": 1,
@@ -514,33 +501,32 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Kitchen",
-   "options": "Separate\nPart of Living Room"
+   "options": "\nSeparate\nPart of Living Room"
   },
   {
    "fieldname": "cooking_fuel",
    "fieldtype": "Select",
    "label": "Cooking fuel",
-   "options": "Coal\nFirewood\nKerosene\nLPG\nElectricity"
+   "options": "\nCoal\nFirewood\nKerosene\nLPG\nElectricity"
   },
   {
-   "default": "Present",
    "fieldname": "smoke_outlet",
    "fieldtype": "Select",
    "label": "Smoke Outlet",
-   "options": "Present\nAbsent"
+   "options": "\nPresent\nAbsent"
   },
   {
    "fieldname": "washing_area_for_utensils",
    "fieldtype": "Select",
    "label": "Washing area for utensils",
-   "options": "Present\nAbsent"
+   "options": "\nPresent\nAbsent"
   },
   {
    "fieldname": "cover_status",
    "fieldtype": "Select",
    "hidden": 1,
    "label": "Cover Status",
-   "options": "Covered\nNot covered"
+   "options": "\nCovered\nNot covered"
   },
   {
    "fieldname": "column_break_ezfx",
@@ -551,31 +537,31 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Platform",
-   "options": "Present\nAbsent"
+   "options": "\nPresent\nAbsent"
   },
   {
    "fieldname": "storage_of_cooked_food",
    "fieldtype": "Select",
    "label": "Storage of cooked food",
-   "options": "Covered\nUncovered vessels"
+   "options": "\nCovered\nUncovered vessels"
   },
   {
    "fieldname": "kitchen_lighting",
    "fieldtype": "Select",
    "label": "Lighting",
-   "options": "Adequate\nInadequate"
+   "options": "\nAdequate\nInadequate"
   },
   {
    "fieldname": "sullage_disposal",
    "fieldtype": "Select",
    "label": "Sullage disposal",
-   "options": "Open drain\nClosed drain\nSoakage pit"
+   "options": "\nOpen drain\nClosed drain\nSoakage pit"
   },
   {
    "fieldname": "dustbin_status",
    "fieldtype": "Select",
    "label": "Dustbin Status",
-   "options": "Absent\nPresent"
+   "options": "\nAbsent\nPresent"
   },
   {
    "fieldname": "column_break_miur",
@@ -586,31 +572,31 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Floor type",
-   "options": "Kuccha\nPucca"
+   "options": "\nKuccha\nPucca"
   },
   {
    "fieldname": "storage_of_raw_food_items",
    "fieldtype": "Select",
    "label": "Storage of raw food items",
-   "options": "Proper\nImproper"
+   "options": "\nProper\nImproper"
   },
   {
    "fieldname": "water_supply",
    "fieldtype": "Select",
    "label": "Water supply",
-   "options": "Present\nAbsent"
+   "options": "\nPresent\nAbsent"
   },
   {
    "fieldname": "appliances_present",
    "fieldtype": "Select",
    "label": "Appliances present",
-   "options": "Refrigerator\nRO filter\nMixer"
+   "options": "\nRefrigerator\nRO filter\nMixer"
   },
   {
    "fieldname": "pests_inside_kitchen",
    "fieldtype": "Select",
    "label": "Pests inside kitchen",
-   "options": "No\nCockroach\nFly"
+   "options": "\nNo\nCockroach\nFly"
   },
   {
    "collapsible": 1,
@@ -619,30 +605,29 @@
    "label": "Drinking water"
   },
   {
-   "default": "Piped",
    "fieldname": "water_source",
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Source",
-   "options": "Piped\nWell\nBore Well\nRO Filter\nTank"
+   "options": "\nPiped\nWell\nBore Well\nRO Filter\nTank"
   },
   {
    "fieldname": "water_supply_status",
    "fieldtype": "Select",
    "label": "Water Supply Status",
-   "options": "Continuous\nIntermittent"
+   "options": "\nContinuous\nIntermittent"
   },
   {
    "fieldname": "storage_of_drinking_water",
    "fieldtype": "Select",
    "label": "Storage of drinking water",
-   "options": "open container\nclosed container"
+   "options": "\nopen container\nclosed container"
   },
   {
    "fieldname": "purification_method",
    "fieldtype": "Select",
    "label": "Purification Method",
-   "options": "NA\nBoiling\nstraining\nHH RO filter"
+   "options": "\nNA\nBoiling\nstraining\nHH RO filter"
   },
   {
    "fieldname": "column_break_vhqm",
@@ -663,7 +648,7 @@
    "fieldname": "household_purification_of_water",
    "fieldtype": "Select",
    "label": "Household purification of water",
-   "options": "Yes\nNo"
+   "options": "\nYes\nNo"
   },
   {
    "collapsible": 1,
@@ -676,13 +661,13 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Privacy",
-   "options": "Present\nAbsent"
+   "options": "\nPresent\nAbsent"
   },
   {
    "fieldname": "accident_prone_areas",
    "fieldtype": "Select",
    "label": "Accident prone areas",
-   "options": "present\nabsent"
+   "options": "\npresent\nabsent"
   },
   {
    "fieldname": "column_break_jiwt",
@@ -692,13 +677,13 @@
    "fieldname": "maintenance",
    "fieldtype": "Select",
    "label": "Maintenance",
-   "options": "well maintained\npoorly maintained"
+   "options": "\nwell maintained\npoorly maintained"
   },
   {
    "fieldname": "drainage",
    "fieldtype": "Select",
    "label": "Drainage",
-   "options": "open\nclosed"
+   "options": "\nopen\nclosed"
   },
   {
    "collapsible": 1,
@@ -707,11 +692,10 @@
    "label": "Sewage Disposal"
   },
   {
-   "default": "Yes",
    "fieldname": "sanitary_latrine",
    "fieldtype": "Select",
    "label": "Sanitary Latrine",
-   "options": "Yes\nNo"
+   "options": "\nYes\nNo"
   },
   {
    "fieldname": "distance_of_sharedcommunity_latrine",
@@ -723,25 +707,23 @@
    "fieldname": "latrine_connection_type",
    "fieldtype": "Select",
    "label": "Latrine Connection Type",
-   "options": "Septic tank\nUnderground sewerage"
+   "options": "\nSeptic tank\nUnderground sewerage"
   },
   {
-   "default": "With soap",
    "fieldname": "hand_washing_after_using_toilet",
    "fieldtype": "Select",
    "label": "Hand washing after using toilet",
-   "options": "With soap\nWithout soap\nNo"
+   "options": "\nWith soap\nWithout soap\nNo"
   },
   {
    "fieldname": "column_break_kskn",
    "fieldtype": "Column Break"
   },
   {
-   "default": "Own",
    "fieldname": "type_of_latrine",
    "fieldtype": "Select",
    "label": "Type of Latrine",
-   "options": "Own\nShared\nCommunity\nAbsent"
+   "options": "\nOwn\nShared\nCommunity\nAbsent"
   },
   {
    "fieldname": "distance_between_insanitary_toilet_and_well",
@@ -749,18 +731,16 @@
    "label": "Distance between Insanitary Toilet and Well"
   },
   {
-   "default": "Yes",
    "fieldname": "open_air_defecation_practice",
    "fieldtype": "Select",
    "label": "Open air defecation practice",
-   "options": "Yes\nNo"
+   "options": "\nYes\nNo"
   },
   {
-   "default": "Yes",
    "fieldname": "children_defecateurinat_near_the_house",
    "fieldtype": "Select",
    "label": "Children Defecate/Urinat Near the House",
-   "options": "Yes\nNo"
+   "options": "\nYes\nNo"
   },
   {
    "collapsible": 1,
@@ -772,13 +752,13 @@
    "fieldname": "segregation_into_dry_and_wet",
    "fieldtype": "Select",
    "label": "Segregation into Dry and Wet",
-   "options": "Yes\nNo"
+   "options": "\nYes\nNo"
   },
   {
    "fieldname": "solid_waste_disposal_method",
    "fieldtype": "Select",
    "label": "Solid Waste Disposal Method",
-   "options": "Thrown\nCollected"
+   "options": "\nThrown\nCollected"
   },
   {
    "fieldname": "solid_waste_disposal_frequency",
@@ -793,7 +773,7 @@
    "fieldname": "solid_waste_collection_method",
    "fieldtype": "Select",
    "label": "Solid Waste Collection Method",
-   "options": "Covered Containers\nUncovered Containers"
+   "options": "\nCovered Containers\nUncovered Containers"
   },
   {
    "fieldname": "collector_information",
@@ -837,13 +817,13 @@
    "fieldname": "health_insurance",
    "fieldtype": "Select",
    "label": "Health Insurance",
-   "options": "AB-Ark\nPrivate\nKGID\nOthers"
+   "options": "\nAB-Ark\nPrivate\nKGID\nOthers"
   },
   {
    "fieldname": "disability_pension",
    "fieldtype": "Select",
    "label": "Disability Pension",
-   "options": "Yes\nNo\nNA"
+   "options": "\nYes\nNo\nNA"
   },
   {
    "fieldname": "column_break_ahbn",
@@ -859,7 +839,7 @@
    "fieldname": "economic_status",
    "fieldtype": "Select",
    "label": "Economic Status",
-   "options": "APL\nBPL\nAAY\nothers"
+   "options": "\nAPL\nBPL\nAAY\nothers"
   },
   {
    "fieldname": "young_age_dependency",
@@ -870,13 +850,13 @@
    "fieldname": "esi",
    "fieldtype": "Select",
    "label": "ESI",
-   "options": "Yes\nNo\nNA"
+   "options": "\nYes\nNo\nNA"
   },
   {
    "fieldname": "widow_pension",
    "fieldtype": "Select",
    "label": "Widow Pension",
-   "options": "Yes\nNo\nNA"
+   "options": "\nYes\nNo\nNA"
   },
   {
    "fieldname": "remarks_if_pension_not_availed",
@@ -906,13 +886,13 @@
    "fieldname": "life_insurance",
    "fieldtype": "Select",
    "label": "Life Insurance",
-   "options": "Yes\nNo"
+   "options": "\nYes\nNo"
   },
   {
    "fieldname": "old_age_pension",
    "fieldtype": "Select",
    "label": "Old Age Pension",
-   "options": "Yes\nNo\nNA"
+   "options": "\nYes\nNo\nNA"
   },
   {
    "fieldname": "image_of_area_to_house",
@@ -945,7 +925,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-01 10:35:51.975927",
+ "modified": "2024-08-01 14:49:54.545797",
  "modified_by": "Administrator",
  "module": "Family Adoption Program",
  "name": "Family Details",

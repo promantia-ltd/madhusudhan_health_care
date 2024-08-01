@@ -129,6 +129,12 @@ app_license = "mit"
 # 		"on_trash": "method"
 # 	}
 # }
+doc_events = {
+    'Family Details': {
+        'before_save': 'health_care.custom_methods.save_additional_details.before_save',
+    }
+}
+
 
 # Scheduled Tasks
 # ---------------
