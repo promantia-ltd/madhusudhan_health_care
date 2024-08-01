@@ -59,43 +59,46 @@ def get_columns():
         {
             "fieldname": "height",
             "label": _("Height (cm)"),
-            "fieldtype": "Int",
+            "fieldtype": "Float",
             "width": "80",
-            "style": "text-align:center;",
-            "text-align": "left !important",
-            "css_class": "text-center",
+            "precision": "2"
         },
         {
             "fieldname": "weight",
             "label": _("Weight (kg)"),
             "fieldtype": "Float",
             "width": "80",
+            "precision": "2"
         },
-        {"fieldname": "bmi", "label": _("Bmi"), "fieldtype": "Float", "width": "80"},
+        {"fieldname": "bmi", "label": _("Bmi"), "fieldtype": "Float", "width": "80", "precision": "2"},
         {
             "fieldname": "hip_c_cm",
             "label": _("Hip C (cm)"),
             "fieldtype": "Float",
             "width": "80",
+            "precision": "2"
         },
         {
             "fieldname": "waist",
             "label": _("Waist C (cm)"),
             "fieldtype": "Float",
             "width": "80",
+            "precision": "2"
         },
-        {"fieldname": "whr", "label": _("WHR"), "fieldtype": "Float", "width": "80"},
+        {"fieldname": "whr", "label": _("WHR"), "fieldtype": "Float", "width": "80", "precision": "2"},
         {
             "fieldname": "rbs",
             "label": _("RBS (mg%)"),
             "fieldtype": "Float",
             "width": "80",
+            "precision": "2"
         },
         {
             "fieldname": "bp_mm_hg",
             "label": _("BP (mm hg)"),
-            "fieldtype": "Int",
+            "fieldtype": "Float",
             "width": "80",
+            "precision": "2"
         },
     ]
 

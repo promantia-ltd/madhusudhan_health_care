@@ -65,6 +65,7 @@
    "fieldname": "height",
    "fieldtype": "Float",
    "label": "Height (cm)",
+   "precision": "2",
    "reqd": 1
   },
   {
@@ -75,6 +76,7 @@
    "fieldname": "weight",
    "fieldtype": "Float",
    "label": "Weight (Kg)",
+   "precision": "2",
    "reqd": 1
   },
   {
@@ -85,24 +87,28 @@
    "fieldname": "bmi",
    "fieldtype": "Float",
    "label": "BMI",
+   "precision": "2",
    "reqd": 1
   },
   {
    "fieldname": "hip_c_cm",
    "fieldtype": "Float",
    "label": "Hip C (cm)",
+   "precision": "2",
    "reqd": 1
   },
   {
    "fieldname": "rbs",
    "fieldtype": "Float",
    "label": "RBS (mg%)",
+   "precision": "2",
    "reqd": 1
   },
   {
    "fieldname": "waist",
    "fieldtype": "Float",
    "label": "Waist C (cm)",
+   "precision": "2",
    "reqd": 1
   },
   {
@@ -115,6 +121,7 @@
    "fieldname": "whr",
    "fieldtype": "Float",
    "label": "WHR",
+   "precision": "2",
    "reqd": 1
   },
   {
@@ -134,7 +141,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-31 15:12:41.068875",
+ "modified": "2024-08-01 10:38:15.642595",
  "modified_by": "Administrator",
  "module": "Family Adoption Program",
  "name": "Measurement Details",
