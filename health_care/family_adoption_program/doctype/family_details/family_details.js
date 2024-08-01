@@ -26,54 +26,75 @@ frappe.ui.form.on("Family Details", {
 							label: 'Family Member Name',
 							fieldname: 'family_member_name',
 							fieldtype: 'Select',
-							options: family_member_names
+							options: family_member_names,
+							reqd: 1
 						},
 						{
 							label: 'Height (Cms)',
 							fieldname: 'height',
 							fieldtype: 'Float',
-							precision: 2
+							precision: 2,
+							reqd: 1,
+							onchange: function() {
+                                update_bmi();
+                            }
 						},
 						{
 							label: 'Weight (Kg)',
 							fieldname: 'weight',
 							fieldtype: 'Float',
-							precision: 2
+							precision: 2,
+							reqd: 1,
+							onchange: function() {
+                                update_bmi();
+                            }
 						},
 						{
 							label: 'BMI',
 							fieldname: 'bmi',
 							fieldtype: 'Float',
-							precision: 2
+							precision: 2,
+							reqd: 1
 						},
 						{
 							label: 'Waist (Cms)',
 							fieldname: 'waist',
 							fieldtype: 'Float',
-							precision: 2
+							precision: 2,
+							reqd: 1,
+							onchange: function() {
+                                update_whr();
+                            }
 						},
 						{
 							label: 'Hip C (Cms)',
 							fieldname: 'hip_c_cm',
 							fieldtype: 'Float',
-							precision: 2
+							precision: 2,
+							reqd: 1,
+							onchange: function() {
+                                update_whr();
+                            }
 						},
 						{
 							label: 'WHR',
 							fieldname: 'whr',
 							fieldtype: 'Float',
-							precision: 2
+							precision: 2,
+							reqd: 1
 						},
 						{
 							label: 'RBS (mg%)',
 							fieldname: 'rbs',
 							fieldtype: 'Float',
-							precision: 2
+							precision: 2,
+							reqd: 1
 						},{
 							label: 'BP (mm hg)',
 							fieldname: 'bp_mm_hg',
 							fieldtype: 'Float',
-							precision: 2
+							precision: 2,
+							reqd: 1
 						}
 					],
 					primary_action_label: 'Add Measurement',
@@ -94,7 +115,29 @@ frappe.ui.form.on("Family Details", {
 						dialog.hide();
 					}
 					
-				});				
+				});
+				function update_bmi() {
+                    let height = dialog.get_value('height');
+                    let weight = dialog.get_value('weight');
+                    if (height && weight) {
+                        let heightInMeters = height / 100;
+                        let bmi = weight / (heightInMeters * heightInMeters);
+                        dialog.set_value('bmi', bmi.toFixed(2));
+                    } else {
+                        dialog.set_value('bmi', '');
+                    }
+                }
+				function update_whr() {
+                    let waist = dialog.get_value('waist');
+                    let hip = dialog.get_value('hip_c_cm');
+                    if (waist && hip) {
+                        let whr = waist / hip;
+                        dialog.set_value('whr', whr.toFixed(2));
+                    } else {
+                        dialog.set_value('whr', '');
+                    }
+                }
+		
 				dialog.show();
 			});
 		}
