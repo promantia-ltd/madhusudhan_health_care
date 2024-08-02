@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "format:FAM-{YYYY}-{######}",
  "creation": "2024-07-25 08:00:10.766423",
@@ -196,7 +197,7 @@
   {
    "fieldname": "family_structure_details",
    "fieldtype": "Table",
-   "label": "Family Member Details",
+   "label": "Family Structure  Details",
    "options": "Family Structure"
   },
   {
@@ -244,12 +245,12 @@
   {
    "fieldname": "family_structure_details_tab",
    "fieldtype": "Tab Break",
-   "label": "Family Members"
+   "label": "Family Structure "
   },
   {
    "fieldname": "family_structure_details_section",
    "fieldtype": "Section Break",
-   "label": "Family Member Details"
+   "label": "Family Structure "
   },
   {
    "fieldname": "habitat_tab",
@@ -925,7 +926,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-01 14:49:54.545797",
+ "modified": "2024-08-02 16:41:59.096176",
  "modified_by": "Administrator",
  "module": "Family Adoption Program",
  "name": "Family Details",
@@ -941,6 +942,30 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Professor",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Student",
    "share": 1,
    "write": 1
   }
