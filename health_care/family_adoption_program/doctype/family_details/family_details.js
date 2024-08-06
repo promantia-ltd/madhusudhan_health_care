@@ -162,5 +162,49 @@ frappe.ui.form.on("Family Details", {
 				}
 			});
 		}
-	}
+	},
+	setup: function(frm) {
+        if (!frm.doc.geotagging) {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    let latitude = position.coords.latitude;
+                    let longitude = position.coords.longitude;
+
+                    let coords = {
+                        type: "FeatureCollection",
+                        features: [
+                            {
+                                type: "Feature",
+                                properties: {
+                                    point_type: "circle",
+                                    radius: 500
+                                },
+                                geometry: {
+                                    type: "Point",
+                                    coordinates: [longitude, latitude]
+                                }
+                            }
+                        ]
+                    };
+
+                    frm.set_value('geotagging', JSON.stringify(coords));
+                    frm.refresh_field('geotagging');
+
+                   
+                }, function(error) {
+                    console.warn(`ERROR(${error.code}): ${error.message}`);
+                    frappe.msgprint(__('Unable to fetch location. Please try again.'));
+                }, 
+				// {
+                //     enableHighAccuracy: true,
+                //     timeout: 5000,             
+                //     maximumAge: 0              
+                // }
+			);
+            } else {
+                frappe.msgprint(__('Geolocation is not supported by this browser.'));
+            }
+        }
+    }
+
 });

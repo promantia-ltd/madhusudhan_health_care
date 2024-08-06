@@ -117,8 +117,7 @@
   "old_age_pension",
   "attachments_tabs",
   "attachments_section",
-  "attach_sketch",
-  "image_of_area_to_house",
+  "geotagging",
   "column_break_opyq",
   "house_plan",
   "house_plan_image",
@@ -233,11 +232,6 @@
    "fieldname": "attachments_section",
    "fieldtype": "Section Break",
    "label": "Attachments"
-  },
-  {
-   "fieldname": "attach_sketch",
-   "fieldtype": "Attach Image",
-   "label": "Sketch of the Area to House with Landmark/Road"
   },
   {
    "fieldname": "house_plan",
@@ -788,12 +782,6 @@
    "label": "Date"
   },
   {
-   "fieldname": "image_of_area_to_house",
-   "fieldtype": "Image",
-   "label": "Image of Area to House ",
-   "options": "attach_sketch"
-  },
-  {
    "fieldname": "house_plan_image",
    "fieldtype": "Image",
    "label": "House Plan Image",
@@ -808,11 +796,16 @@
    "collapsible": 1,
    "fieldname": "section_break_juau",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "geotagging",
+   "fieldtype": "Geolocation",
+   "label": "Sketch of the Area to House with Landmark/Road"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-05 14:08:48.437300",
+ "modified": "2024-08-06 15:34:55.248081",
  "modified_by": "Administrator",
  "module": "Family Adoption Program",
  "name": "Additional Information",
