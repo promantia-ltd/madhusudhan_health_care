@@ -925,8 +925,13 @@
   }
  ],
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2024-08-02 16:41:59.096176",
+ "links": [
+  {
+   "link_doctype": "Measurement Details",
+   "link_fieldname": "family_details"
+  }
+ ],
+ "modified": "2024-08-06 10:48:41.446106",
  "modified_by": "Administrator",
  "module": "Family Adoption Program",
  "name": "Family Details",
