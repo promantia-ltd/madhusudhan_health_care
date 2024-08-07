@@ -163,7 +163,7 @@ frappe.ui.form.on("Family Details", {
 			});
 		}
 	},
-	setup: function(frm) {
+	onload: function(frm) {
         if (!frm.doc.geotagging) {
             if (navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(function(position) {
