@@ -129,6 +129,12 @@ app_license = "mit"
 # 		"on_trash": "method"
 # 	}
 # }
+doc_events = {
+    'Family Details': {
+        'before_save': 'health_care.custom_methods.save_additional_details.before_save',
+    }
+}
+
 
 # Scheduled Tasks
 # ---------------
@@ -226,4 +232,11 @@ app_license = "mit"
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
+
+fixtures = [{
+    "doctype": "Role",
+    "filters": {
+        "name": ["in", ["Student", "Professor"]]
+    }
+}]
 

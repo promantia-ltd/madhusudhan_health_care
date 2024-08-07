@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "format:MD-{YYYY}-{######}",
  "creation": "2024-07-25 08:24:28.540475",
@@ -141,7 +142,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-01 10:38:15.642595",
+ "modified": "2024-08-05 14:16:41.198882",
  "modified_by": "Administrator",
  "module": "Family Adoption Program",
  "name": "Measurement Details",
@@ -157,6 +158,32 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Professor",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Student",
    "share": 1,
    "write": 1
   }

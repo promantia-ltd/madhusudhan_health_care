@@ -133,8 +133,9 @@
   },
   {
    "fieldname": "year",
-   "fieldtype": "Int",
-   "label": "Years"
+   "fieldtype": "Float",
+   "label": "Years",
+   "precision": "2"
   },
   {
    "fieldname": "condition_type_3",
@@ -169,25 +170,29 @@
   },
   {
    "fieldname": "years_2",
-   "fieldtype": "Int"
+   "fieldtype": "Float",
+   "precision": "2"
   },
   {
    "fieldname": "years_3",
-   "fieldtype": "Int"
+   "fieldtype": "Float",
+   "precision": "2"
   },
   {
    "fieldname": "years_4",
-   "fieldtype": "Int"
+   "fieldtype": "Float",
+   "precision": "2"
   },
   {
    "fieldname": "years_5",
-   "fieldtype": "Int"
+   "fieldtype": "Float",
+   "precision": "2"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-08-01 10:39:46.070465",
+ "modified": "2024-08-01 14:05:52.818468",
  "modified_by": "Administrator",
  "module": "Family Adoption Program",
  "name": "Family Structure",
