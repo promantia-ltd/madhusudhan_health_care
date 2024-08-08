@@ -107,7 +107,7 @@ frappe.ui.form.on("Family Details", {
 							},{
 								label: 'BP (mm hg)',
 								fieldname: 'bp_mm_hg',
-								fieldtype: 'Float',
+								fieldtype: 'Data',
 								precision: 2,
 								reqd: 1
 							}
@@ -186,20 +186,25 @@ frappe.ui.form.on("Family Details", {
                             }
                         ]
                     };
+					setTimeout(()=>{
+						frm.set_value('geotagging', JSON.stringify(coords));
+						frm.refresh_field('geotagging');
+						console.log("map loadedd")
+					},3000)
 
-                    frm.set_value('geotagging', JSON.stringify(coords));
-                    frm.refresh_field('geotagging');
+                    
 
                    
                 }, function(error) {
                     console.warn(`ERROR(${error.code}): ${error.message}`);
                     frappe.msgprint(__('Unable to fetch location. Please try again.'));
+					
                 }, 
-				// {
-                //     enableHighAccuracy: true,
-                //     timeout: 5000,             
-                //     maximumAge: 0              
-                // }
+				{
+                    enableHighAccuracy: true,
+                    // timeout: 5000,             
+                    // maximumAge: 0              
+                }
 			);
             } else {
                 frappe.msgprint(__('Geolocation is not supported by this browser.'));
