@@ -96,7 +96,7 @@ def get_columns():
         {
             "fieldname": "bp_mm_hg",
             "label": _("BP (mm hg)"),
-            "fieldtype": "Float",
+            "fieldtype": "Data",
             "width": "80",
             "precision": "2"
         },
