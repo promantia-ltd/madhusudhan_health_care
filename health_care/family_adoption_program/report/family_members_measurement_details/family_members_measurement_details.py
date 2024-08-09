@@ -1,3 +1,6 @@
+# Copyright (c) 2024, Promantia and contributors
+# For license information, please see license.txt
+
 import frappe
 from frappe import _, msgprint
 
@@ -125,3 +128,4 @@ def get_conditions(filters):
         conditions["measurement_date"] = ["<=", selected_date]
 
     return conditions
+

@@ -158,7 +158,7 @@ frappe.ui.form.on("Family Details", {
 
 				} 
 				else if (action === 'measurement_report') {
-					frappe.set_route('query-report', 'Measurement Details Custom Report', { 'family_details': frm.doc.name });
+					frappe.set_route('query-report', 'Family Members Measurement Details', { 'family_details': frm.doc.name });
 				}
 			});
 		}
