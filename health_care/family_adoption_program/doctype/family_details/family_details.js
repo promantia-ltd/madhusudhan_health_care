@@ -161,6 +161,13 @@ frappe.ui.form.on("Family Details", {
 					frappe.set_route('query-report', 'Family Members Measurement Details', { 'family_details': frm.doc.name });
 				}
 			});
+			frm.add_custom_button(__('Start Recording'), function() {
+				startVoiceRecording(frm);
+			}).addClass("btn-primary").attr("id", "start-voice-record-btn");
+	
+			frm.add_custom_button(__('Stop Recording'), function() {
+				stopVoiceRecording(frm);
+			}).addClass("btn-danger").attr("id", "stop-voice-record-btn").hide(); 
 		}
 	},
 	onload: function(frm) {
@@ -213,3 +220,76 @@ frappe.ui.form.on("Family Details", {
     }
 
 });
+
+let recognition;
+let recording = false;
+
+function startVoiceRecording(frm) {
+    const startBtn = document.querySelector("#start-voice-record-btn");
+    const stopBtn = document.querySelector("#stop-voice-record-btn");
+	// const resultField = frm.fields_dict['any_remarks'].input;
+	if (!recording) {
+        let SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+        recognition = new SpeechRecognition();
+        recognition.lang = 'en';
+        recognition.interimResults = false;
+        recognition.start();
+
+        recognition.onresult = function(event) {
+            const speechResult = event.results[0][0].transcript;
+            frappe.msgprint('Recognized Speech: ' + speechResult);
+            // resultField.value = speechResult; 
+        
+			console.log("check frm",frm)
+			frm.meta.fields.forEach(field => {
+				if(field.label){
+					const label = field.label.toLowerCase();
+					const regex = new RegExp(`${label} is ([\\w\\s]+)`, 'i');
+					const match = speechResult.match(regex);
+	
+					if (match) {
+						let value = match[1].trim();
+						value = value.charAt(0).toUpperCase() + value.slice(1);
+						updateFieldValue(frm, field.fieldname, value);
+					}
+				}
+				
+			});
+		};
+	}
+        // recognition.onerror = function(event) {
+        //     stopVoiceRecording(frm);
+        //     frappe.msgprint('Error occurred in recognition: ' + event.error);
+        // };
+		recognition.onspeechend = () => {
+			// startVoiceRecording(frm);
+			stopVoiceRecording(frm);
+
+		  };
+
+        startBtn.style.display = 'none';
+        stopBtn.style.display = 'inline-block';
+        recording = true;
+    }
+// }
+
+function stopVoiceRecording(frm) {
+    const startBtn = document.querySelector("#start-voice-record-btn");
+    const stopBtn = document.querySelector("#stop-voice-record-btn");
+	
+	if (recognition) {
+        recognition.stop();
+    }
+
+    stopBtn.style.display = 'none';
+    startBtn.style.display = 'inline-block';
+    recording = false;
+}
+function updateFieldValue(frm, fieldname, value) {
+    if (frm.fields_dict[fieldname]) {
+        frm.set_value(fieldname, value);
+        frappe.msgprint(`Updated ${fieldname}: ${value}`);
+    } else {
+        frappe.msgprint(`Field ${fieldname} not found in the form.`);
+    }
+}
