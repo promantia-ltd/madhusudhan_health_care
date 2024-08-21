@@ -27,7 +27,14 @@
   "family_structure_details_section",
   "family_structure_details",
   "section_break_xv5m",
-  "amended_from",
+  "birth",
+  "adoption",
+  "column_break_mytg",
+  "divorce",
+  "marriage",
+  "column_break_endz",
+  "death",
+  "migration",
   "habitat_tab",
   "environment_section",
   "approach_road",
@@ -146,18 +153,10 @@
  ],
  "fields": [
   {
+   "collapsible": 1,
    "fieldname": "section_break_xv5m",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Family Details",
-   "print_hide": 1,
-   "read_only": 1,
-   "search_index": 1
+   "fieldtype": "Section Break",
+   "label": "Vital events in the family during past one year"
   },
   {
    "fieldname": "student",
@@ -247,6 +246,7 @@
    "label": "Family Structure "
   },
   {
+   "collapsible": 1,
    "fieldname": "family_structure_details_section",
    "fieldtype": "Section Break",
    "label": "Family Structure "
@@ -915,6 +915,44 @@
    "fieldname": "geotagging",
    "fieldtype": "Geolocation",
    "label": "Sketch of the Area to House with Landmark/Road"
+  },
+  {
+   "fieldname": "birth",
+   "fieldtype": "Int",
+   "label": "Birth"
+  },
+  {
+   "fieldname": "adoption",
+   "fieldtype": "Int",
+   "label": "Adoption"
+  },
+  {
+   "fieldname": "column_break_mytg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "divorce",
+   "fieldtype": "Int",
+   "label": "Divorce"
+  },
+  {
+   "fieldname": "marriage",
+   "fieldtype": "Int",
+   "label": "Marriage"
+  },
+  {
+   "fieldname": "column_break_endz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "death",
+   "fieldtype": "Int",
+   "label": "Death"
+  },
+  {
+   "fieldname": "migration",
+   "fieldtype": "Int",
+   "label": "Migration"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -924,7 +962,7 @@
    "link_fieldname": "family_details"
   }
  ],
- "modified": "2024-08-20 10:44:28.165369",
+ "modified": "2024-08-21 11:53:48.664114",
  "modified_by": "Administrator",
  "module": "Family Adoption Program",
  "name": "Family Details",
