@@ -1,6 +1,5 @@
 frappe.ui.form.on("Family Details", {
   refresh(frm) {
-    if (frm.doc.docstatus === 0) {
       if (!frm.custom_buttons["Toggle Voice Recording"]) {
         frm
           .add_custom_button(__("Enable Voice Recording"), function () {
@@ -207,13 +206,13 @@ frappe.ui.form.on("Family Details", {
           } else if (action === "measurement_report") {
             frappe.set_route(
               "query-report",
-              "Family Members Measurement Details",
+              "Family Members Measurement Details",    // }
+
               { family_details: frm.doc.name }
             );
           }
         });
       }
-    }
   },
   onload: function (frm) {
     if (!frm.doc.geotagging) {

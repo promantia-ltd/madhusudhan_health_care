@@ -27,7 +27,26 @@
   "family_structure_details_section",
   "family_structure_details",
   "section_break_xv5m",
-  "amended_from",
+  "birth",
+  "adoption",
+  "column_break_mytg",
+  "divorce",
+  "marriage",
+  "column_break_endz",
+  "death",
+  "migration",
+  "family_composition_section",
+  "infants_0_1yrs",
+  "adolescents_10_19yrs",
+  "pregnant_women",
+  "column_break_rhpo",
+  "children_5yrs_or_less",
+  "adults_males",
+  "lactating_women",
+  "column_break_apqu",
+  "children_6_9yrs",
+  "adults_females",
+  "elderly_above_65yrs",
   "habitat_tab",
   "environment_section",
   "approach_road",
@@ -146,18 +165,10 @@
  ],
  "fields": [
   {
+   "collapsible": 1,
    "fieldname": "section_break_xv5m",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Family Details",
-   "print_hide": 1,
-   "read_only": 1,
-   "search_index": 1
+   "fieldtype": "Section Break",
+   "label": "Vital events in the family during past one year"
   },
   {
    "fieldname": "student",
@@ -247,6 +258,7 @@
    "label": "Family Structure "
   },
   {
+   "collapsible": 1,
    "fieldname": "family_structure_details_section",
    "fieldtype": "Section Break",
    "label": "Family Structure "
@@ -915,6 +927,103 @@
    "fieldname": "geotagging",
    "fieldtype": "Geolocation",
    "label": "Sketch of the Area to House with Landmark/Road"
+  },
+  {
+   "fieldname": "birth",
+   "fieldtype": "Int",
+   "label": "Birth"
+  },
+  {
+   "fieldname": "adoption",
+   "fieldtype": "Int",
+   "label": "Adoption"
+  },
+  {
+   "fieldname": "column_break_mytg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "divorce",
+   "fieldtype": "Int",
+   "label": "Divorce"
+  },
+  {
+   "fieldname": "marriage",
+   "fieldtype": "Int",
+   "label": "Marriage"
+  },
+  {
+   "fieldname": "column_break_endz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "death",
+   "fieldtype": "Int",
+   "label": "Death"
+  },
+  {
+   "fieldname": "migration",
+   "fieldtype": "Int",
+   "label": "Migration"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "family_composition_section",
+   "fieldtype": "Section Break",
+   "label": "Family composition"
+  },
+  {
+   "fieldname": "infants_0_1yrs",
+   "fieldtype": "Int",
+   "label": "Infants (0-1yrs)"
+  },
+  {
+   "fieldname": "adolescents_10_19yrs",
+   "fieldtype": "Int",
+   "label": "Adolescents (10\u201319yrs)"
+  },
+  {
+   "fieldname": "pregnant_women",
+   "fieldtype": "Int",
+   "label": "Pregnant Women"
+  },
+  {
+   "fieldname": "column_break_rhpo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "children_5yrs_or_less",
+   "fieldtype": "Int",
+   "label": "Children (\u22645yrs)"
+  },
+  {
+   "fieldname": "adults_males",
+   "fieldtype": "Int",
+   "label": "Adults \u2013 Males"
+  },
+  {
+   "fieldname": "lactating_women",
+   "fieldtype": "Int",
+   "label": "Lactating Women"
+  },
+  {
+   "fieldname": "column_break_apqu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "children_6_9yrs",
+   "fieldtype": "Int",
+   "label": "Children (6\u20139yrs)"
+  },
+  {
+   "fieldname": "adults_females",
+   "fieldtype": "Int",
+   "label": "Adults \u2013 Females"
+  },
+  {
+   "fieldname": "elderly_above_65yrs",
+   "fieldtype": "Int",
+   "label": "Elderly (>65yrs)"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -924,7 +1033,7 @@
    "link_fieldname": "family_details"
   }
  ],
- "modified": "2024-08-20 10:44:28.165369",
+ "modified": "2024-08-21 15:18:32.895570",
  "modified_by": "Administrator",
  "module": "Family Adoption Program",
  "name": "Family Details",

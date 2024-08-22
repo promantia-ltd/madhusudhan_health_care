@@ -3,15 +3,15 @@ from frappe.utils.password import update_password
 from frappe.exceptions import ValidationError
 
 def create_user_for_student(doc, method):
-    email = f"{doc.student_name.replace(' ', '.').lower()}.{doc.roll_no}@gmail.com"
+    # email = f"{doc.student_name.replace(' ', '.').lower()}.{doc.roll_no}@gmail.com"
     password = f"{doc.student_name.replace(' ', '')}@{doc.roll_no}"
 
-    if frappe.db.exists("User", {"email": email}):
-        frappe.throw(f"User with email {email} already exists.")
+    if frappe.db.exists("User", {"email": doc.email}):
+        frappe.throw(f"User with email {doc.email} already exists.")
     user = frappe.new_doc("User")
-    user.email = email
+    user.email = doc.email
     user.first_name = doc.student_name
-    user.username = email
+    user.username = doc.email
     user.enabled = 1
     user.send_welcome_email = 0
     user.user_type = "System User"
