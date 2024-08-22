@@ -1,5 +1,14 @@
 frappe.ui.form.on("Family Details", {
   refresh(frm) {
+    $(document).off("keydown"); 
+    $(document).on("keydown", function (event) {
+      if (event.ctrlKey && event.key === "m") {
+        event.preventDefault();
+        if (frm) {
+          toggleVoiceRecording(frm);
+        }
+      }
+    });
       if (!frm.custom_buttons["Toggle Voice Recording"]) {
         frm
           .add_custom_button(__("Enable Voice Recording"), function () {
