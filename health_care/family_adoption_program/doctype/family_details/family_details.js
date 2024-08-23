@@ -14,7 +14,7 @@ frappe.ui.form.on("Family Details", {
           .add_custom_button(__("Enable Voice Recording"), function () {
             toggleVoiceRecording(frm);
           })
-          .addClass("btn-danger")
+          .addClass("btn-info")
           .attr("id", "voice-record-toggle");
       }
 
@@ -312,10 +312,10 @@ function toggleVoiceRecording(frm, enable = null) {
   const button = $("#voice-record-toggle");
 
   if (enable) {
-    button.text("Disable Voice Recording");
+    button.text("Disable Voice Recording").css({'background-color':'red','color':'white','font-weight': 'bold'});
     showVoiceIcons(frm, true);
   } else {
-    button.text("Enable Voice Recording");
+    button.text("Enable Voice Recording").css({'background-color':'green','color':'white','font-weight': 'bold'});
     showVoiceIcons(frm, false);
   }
 }
