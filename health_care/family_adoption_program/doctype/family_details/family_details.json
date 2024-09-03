@@ -175,7 +175,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Student",
-   "options": "Student Master",
+   "options": "Student",
    "reqd": 1
   },
   {
@@ -1033,7 +1033,7 @@
    "link_fieldname": "family_details"
   }
  ],
- "modified": "2024-08-21 15:18:32.895570",
+ "modified": "2024-09-03 09:19:56.655043",
  "modified_by": "Administrator",
  "module": "Family Adoption Program",
  "name": "Family Details",

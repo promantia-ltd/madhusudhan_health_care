@@ -133,7 +133,7 @@ doc_events = {
     'Family Details': {
         'before_save': 'health_care.custom_methods.save_additional_details.before_save',
     },
-    "Student Master": {
+    "Student": {
         "after_insert": "health_care.custom_methods.create_user_for_student.create_user_for_student",
     }
 }

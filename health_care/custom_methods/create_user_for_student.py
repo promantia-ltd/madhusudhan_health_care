@@ -1,36 +1,38 @@
 import frappe
 from frappe.utils.password import update_password
+from frappe import _
+from datetime import datetime
 from frappe.exceptions import ValidationError
 
+
 def create_user_for_student(doc, method):
-    # email = f"{doc.student_name.replace(' ', '.').lower()}.{doc.roll_no}@gmail.com"
-    password = f"{doc.student_name.replace(' ', '')}@{doc.roll_no}"
+    if not doc.date_of_birth:
+        frappe.throw(_("Date Of Birth is required to create a user."))
 
-    if frappe.db.exists("User", {"email": doc.email}):
-        frappe.throw(f"User with email {doc.email} already exists.")
-    user = frappe.new_doc("User")
-    user.email = doc.email
-    user.first_name = doc.student_name
-    user.username = doc.email
-    user.enabled = 1
-    user.send_welcome_email = 0
-    user.user_type = "System User"
-    user.insert(ignore_permissions=True)
-    
-    user.add_roles("student")
+    try:
+        dob_year = datetime.strptime(doc.date_of_birth, '%Y-%m-%d').year
+    except ValueError:
+        frappe.throw(
+            _("Invalid Date of Birth format. Please use 'YYYY-MM-DD'."))
 
+    password = f"{doc.student_name.replace(' ', '')}@{dob_year}"
+    # get the user doc
+    user = frappe.get_doc("User", doc.user)
+
+    # Create a User Permission for the Student
     user_permission = frappe.get_doc({
         "doctype": "User Permission",
         "user": user.name,
-        "allow": "Student Master",  
+        "allow": "Student",
         "for_value": doc.name,
         "apply_for_all_roles": 1
     })
     user_permission.insert(ignore_permissions=True)
 
+    # Update the user's password
     try:
         update_password(user.name, password)
     except ValidationError as e:
-        frappe.throw(f"Error updating password: {str(e)}")
-    
-    frappe.msgprint(f"User {user.name} created for student {doc.student_name}")
+        frappe.throw(_("Error updating password: {0}").format(str(e)))
+
+    frappe.msgprint(_("User {0} created for student {1}").format(user.name, doc.student_name))
