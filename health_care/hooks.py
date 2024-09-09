@@ -8,6 +8,28 @@ app_license = "mit"
 
 # Includes in <head>
 # ------------------
+fixtures = [
+    {
+        "doctype": "Role",
+        "filters": {
+            "name": ["in", ["Student", "Instructor"]]
+        }
+    },
+    {
+        "dt": "Property Setter",
+        "filters": [
+            ["module", "in", ["Health Care", "Family Adoption Program"]]
+        ]
+    },
+    {
+        "dt": "Custom Field",
+        "filters": [
+            ["module", "in", ["Health Care", "Family Adoption Program"]]
+        ]
+    }
+
+]
+
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/health_care/css/health_care.css"
@@ -134,7 +156,10 @@ doc_events = {
         'before_save': 'health_care.custom_methods.save_additional_details.before_save',
     },
     "Student": {
-        "after_insert": "health_care.custom_methods.create_user_for_student.create_user_permission",
+        "after_insert": "health_care.custom_methods.create_user_permission.create_user_permission_for_student",
+    },
+    "Instructor": {
+        "after_insert": "health_care.custom_methods.create_user_permission.create_user_permission_for_instructor",
     }
 }
 
@@ -235,11 +260,3 @@ doc_events = {
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
-
-fixtures = [{
-    "doctype": "Role",
-    "filters": {
-        "name": ["in", ["Student", "Professor"]]
-    }
-}]
-
