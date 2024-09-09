@@ -1,6 +1,6 @@
 ## Health Care
 
-Madhusudhan Hospital Health Care
+National Medical Council - Health Care
 
 #### License
 
